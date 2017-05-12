@@ -13,7 +13,7 @@
 }
 
 /* Sidebar nav */
-#my-info{
+.my-info{
 	position: fixed;
 	height: 100%;
 }
@@ -45,4 +45,14 @@
 	text-align: center;
 	align-self: center;
 	color: white;
+}
+
+/* Segment Table View */
+.left-side{
+	height: 100%;
+}
+
+.right-side{
+	min-height: 100%;
+	float: right;
 }
