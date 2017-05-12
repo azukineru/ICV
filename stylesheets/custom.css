@@ -1,0 +1,48 @@
+/* Footer */
+#footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	text-align: center;
+}
+
+.dashboard_footer p{
+	text-align: center;
+}
+
+/* Sidebar nav */
+#my-info{
+	position: fixed;
+	height: 100%;
+}
+
+/* 9 Segments */
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	background: red;
+	padding: 8px;
+	position: relative;
+	list-style: none;
+	display: flex;
+	align-items: center; 
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-self: center;
+	color: white;
+}
