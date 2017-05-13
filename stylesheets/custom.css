@@ -1,3 +1,10 @@
+.inner{
+	padding-left: 20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
 /* Footer */
 #footer{
 	position: absolute;
@@ -8,8 +15,9 @@
 	text-align: center;
 }
 
-.dashboard_footer p{
-	text-align: center;
+/* full-height */
+.full-height{
+	height: 100%;
 }
 
 /* Sidebar nav */
@@ -21,9 +29,6 @@
 /* 9 Segments */
 .da-thumbs li {
 	float: left;
-	margin: 5px;
-	background: red;
-	padding: 8px;
 	position: relative;
 	list-style: none;
 	display: flex;
@@ -55,4 +60,46 @@
 .right-side{
 	min-height: 100%;
 	float: right;
+}
+
+/* Border in Index page */
+@media screen and (min-width: 500px){
+	.desktop-only{
+		border-right: 5px solid #FF9286;
+		border-right-style: dashed;
+	}
+}
+
+/* Specific dashboard style */
+.dashboard-L{
+	background-image: url('../image/segment-L.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 500px){
+	.dashboard-style{
+		display: none;
+	}
+}
+
+/* Table Cluster list */
+.table-cluster{
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+	width: 90%;
+}
+table{
+	border-collapse: separate;
+}
+.table-cluster tbody tr td{
+	text-align: center;
+}
+
+/* Map content */
+.map-content{
+	background-color: white;
+}
+.map-image img{
+	max-width: 100%;
 }

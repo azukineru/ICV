@@ -10,38 +10,37 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-
-	<div class="row">
-		<div class="large-3 columns">
-			<a href="page_view-listcluster.html"><h1>Back</h1></a>
+	<div class="off-canvas-wrapper">
+		<div class="row expanded large-12" style="background-color: red">
+			<div class="large-3 large-push-1 columns">
+				<a href="page_view-listcluster.html"><i class="fi-arrow-left medium"> Back</i></a>
+			</div>
+			<div class="large-9 large-pull-1 columns">
+				<h1 class="right" style="text-align: right;">Cluster something</h1>			
+			</div>
 		</div>
-		<div class="large-9 columns">
-			<h1 class="right" style="text-align: right;">Cluster something</h1>
-			
-		</div>
-		<hr/>
-	</div>
 
-
-	<div class="row">
-
-		<div class="large-4 columns" role="content">
-			<article>
+		<div class="row expanded large-12" style="height:100%; background-color: green">
+			<div class="large-5 columns position-left map-content inner" role="content" style="height: 100%;">
+				<br>
 				<h3>Map</h3>
-				
-			</article>
-			<hr/>
-		</div>
+				<div class="row">
+					<div class="large-9 small-centered columns map-image">
+						<img class="thumbnail" src="http://placehold.it/800x500">
+					</div>
+				</div>
+			</div>
 
-
-		<aside class="large-7 push-3 columns">
-			<h5>Cluster Data</h5>
+			<aside class="large-7 columns float-right inner" style="height: 100%; background-color: #DFD9B9;">
+				<br>
+				<h3>Cluster Data</h3>
 				<ul>
 					<li>HS2</li>
 					<li>Tipe Cluster</li>
@@ -67,14 +66,10 @@
 					<li>KAP 224</li>
 					<li>Karakteristik Penghuni: Chinese, rumah mewah, ketemu janjian</li>
 				</ul>
-		</aside>
 
+			</aside>
+		</div>
 	</div>
-
-
-	<footer class="row">
-
-	</footer>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
 	<script>

@@ -9,46 +9,61 @@
 	<title>ICV</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/foundation/scss/foundation.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="row">
-		<div class="large-12 columns">
-			<h1>IndiHome Cluster Visualization<small><br>Telkom Indonesia - Witel Semarang</small></h1>
-			<hr/>
-			<br>
-			<br>
-		</div>
+	<div class="large-12" style="height: 150px; width:100%; background-color: green">
 	</div>
-
+	<br>
 	<div class="row">
-		<div class="small-offset-4 small-centered">
-			<form action="" method="">
-				<div class="small-6">
-					<label>Username :
-						<input type="text" />
-					</label>
+		<div class="large-6 column desktop-only">
+			<div class="row">
+				<div class="large-9 small-centered columns">
+					<div class="row">
+						<div class="small-8 small-centered columns">
+							<img src="image/logo-telkom.png">
+						</div>
+						<br>
+						<div class="small-8 small-centered columns">
+							<img src="image/logo-jago.jpg">
+						</div>
+						<br>
+					</div>
 				</div>
-				<div class="small-6">
-					<label>Password :
-						<input type="password" />
-					</label>
+			</div>
+		</div>
+
+		<div class="large-6 column">
+			<div class="row">
+				<div class="large-9 small-centered columns">
+					<div class="row">
+						<div class="large-9 small-centered columns"><h4><b>IndiHome Cluster Digitalization</b></h4></div>
+						<div class="large-9 small-centered columns"><h6>Witel Semarang</h6></div><br>
+						<form action="" method="">
+							<div class="large-9 small-centered columns">
+								<input type="text" placeholder="Username" />
+							</div>
+							<div class="large-9 small-centered columns">
+								<input type="password" placeholder="Password" />
+							</div>
+							<div class="large-9 small-centered columns">
+								<button class="button tiny expand round" name="Login" type="submit">Login</button>
+							</div>	
+						</form>	
+						<div class="large-9 small-centered columns"><a href="#">Create new account</a></div>
+					</div>
 				</div>
-				<div class="small-6">
-					<button class="button expand" name="Login" type="submit">Login</button>
-				</div>	
-			</form>	
-			<a href="#">Create new account</a>
+			</div>
 		</div>
 	</div>
 
 
 	<br><br>
-	<div id="footer">
+	<div id="footer" class="hide-for-small-only">
 		<div class="large-12 columns">
 			<hr/>
 			<div class="row">
