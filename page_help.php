@@ -33,7 +33,7 @@
             <li>
               <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="page_help.php">Help</a></li>
+                <li><a class="subitem" href="#">Help</a></li>
                 <li><a class="subitem" href="logout.php">Logout</a></li>
               </ul>
             </li>
@@ -61,10 +61,14 @@
 
         <div class="row large-12">
           <div class="row inner">
-            <h1>Welcome, admin !</h1>
+            <h2>Sites Help</h2>
+            <hr>
+            <h1>Questions You May Have</h1>
             <p class="lead">
-              This is the dashboard page, you can navigate to all of the applications feature from here.
-              Foundation Compass Template
+              <ol>
+                <li>What is this website used for ?</li>This website is used to visualize every clusters which located in Witel Semarang. Every clusters have their own coordinate in map. The main purposes are to give map illustration to employee and ease them when working on that cluster.<br><br>
+                <li>How do I use this ?</li>Simply click 'Customer Segments' option on the App menu. You can pick and choose segment that you want to explore. After that, website will show you the list of all clusters which belong to that segment. You may click on of those clusters, and our website will give you the detail of that cluster.
+              </ol>
             </p>
           </div>
 

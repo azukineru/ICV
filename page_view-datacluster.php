@@ -1,5 +1,5 @@
 <?php
-	include('session.php');
+include('session.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,17 +21,27 @@
 </head>
 <body>
 	<div class="off-canvas-wrapper">
-		<div class="row expanded large-12 header-cluster">
+		<div class="row expanded large-12 header-cluster hide-for-small-only">
 			<div class="large-3 large-push-1 columns">
-				<a href="page_view-listcluster.php"><i class="fi-arrow-left medium"> Back</i></a>
+				<a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
 			</div>
 			<div class="large-9 large-pull-1 columns">
-				<h1 class="right" style="text-align: center; color: white;">Cluster something</h1>			
+				<h1 class="right text-white text-center">Cluster something</h1>			
 			</div>
 		</div>	
 
-		<div class="row expanded large-12" style="height:100%; background-color: green">
-			<div class="large-5 columns position-left map-content inner" role="content" style="height: 100%;">
+		<div class="row expanded large-12" style="height:100%;">
+			<div class="title-bar hide-for-large">
+				<div class="title-bar-left">
+					<a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
+				</div>
+			</div>
+			<div class="title-bar hide-for-large bg-red">
+				<div class="title-bar-right">
+					<h2>Cluster something</h2>
+				</div>
+			</div>
+			<div class="large-5 columns position-left map-content inner" role="content">
 				<br>
 				<h3>Map</h3>
 				<div class="row">
@@ -69,7 +79,6 @@
 					<li>KAP 224</li>
 					<li>Karakteristik Penghuni: Chinese, rumah mewah, ketemu janjian</li>
 				</ul>
-
 			</aside>
 		</div>
 	</div>

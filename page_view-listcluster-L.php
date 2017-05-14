@@ -31,8 +31,7 @@
       <div class="large-9 float-right" data-off-canvas-content>
         <div class="title-bar hide-for-large">
           <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-            <span class="title-bar-title">Dashboard</span>
+            <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
           </div>
         </div>
         

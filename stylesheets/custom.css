@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px){
+	body{
+		overflow-x: hidden;
+	}
+}
+
 .inner{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -118,7 +124,7 @@
 	background-repeat: no-repeat;
 }
 @media screen and (max-width: 500px){
-	.dashboard-style{
+	.dashboard-L, .dashboard-H, .dashboard-G, .dashboard-F, .dashboard-E, .dashboard-D, .dashboard-C, .dashboard-B, .dashboard-A{
 		display: none;
 	}
 }
@@ -148,6 +154,12 @@ table{
 /* Map content */
 .map-content{
 	background-color: white;
+	height: 100%;
+}
+@media screen and (max-width: 500px){
+	.map-content{
+		height: auto;
+	}
 }
 .map-image img{
 	max-width: 100%;
@@ -158,4 +170,34 @@ table{
 	max-height:400px;
 	width:100%;border:1px solid #ccc;
 	overflow:auto;
+}
+
+/* Background Color */
+.bg-red{
+	background-color: red;
+}
+.bg-white{
+	background-color: white;
+}
+
+/* Text Align */
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+
+/* Text Color */
+.text-white{
+	color: white;
+}
+.text-red{
+	color: red;
+}
+.text-black{
+	color: black;
 }

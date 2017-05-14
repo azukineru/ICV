@@ -18,7 +18,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <div class="large-3 position-left reveal-for-large my-info dashboard-F" data-off-canvas data-position="left">
+      <div class="large-3 position-left reveal-for-large my-info dashboard-F" data-off-canvas data-position="left">
         <div class="row">
           <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
         </div>
@@ -27,8 +27,7 @@
       <div class="large-9 float-right" data-off-canvas-content>
         <div class="title-bar hide-for-large">
           <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-            <span class="title-bar-title">Dashboard</span>
+            <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
           </div>
         </div>
         

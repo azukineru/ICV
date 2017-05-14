@@ -1,5 +1,5 @@
 <?php
-	include('session.php');
+include('session.php');
 ?>
 
 <!doctype html>
@@ -61,7 +61,7 @@
 
         <div class="row large-12" id="scroll">
           <div class="large-6 large-offset-1 column" style="margin-top: 60px;">
-            <ul id="da-thumbs" class="da-thumbs">
+            <ul id="da-thumbs" class="da-thumbs inner">
               <li>
                 <a href="page_view-listcluster-G.php">
                   <img src="image/G.png">
@@ -83,7 +83,7 @@
                 </a>
               </li>
               <li>
-              <a href="page_view-listcluster-L.php">
+                <a href="page_view-listcluster-L.php">
                   <img src="image/L.png">
                   <div>
                     <h4><u>Segment L</u></h4>
@@ -155,7 +155,7 @@
             </ul>
           </div>
 
-          <div class="large-4 large-pull-1 column" style="margin-top: 40px;">
+          <div class="large-4 large-pull-1 column inner" style="margin-top: 40px;">
             <div class="row">
               <h3>Customer Segmentation</h3>
             </div>

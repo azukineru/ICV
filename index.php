@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="large-12" style="height: 150px; width:100%;">
+	<div class="large-12" style="height: 150px; width:100%; background-image: url('image/header.png'); background-position: top left;background-repeat: no-repeat;background-size: 100%">
 	</div>
 	<br>
 	<div class="row">
@@ -62,7 +62,7 @@
 								<button class="button tiny expand round" name="login" type="submit">Login</button>
 							</div>	
 						</form>	
-						<div class="large-9 small-centered columns"><a href="#">Create new account</a></div>
+						
 					</div>
 				</div>
 			</div>

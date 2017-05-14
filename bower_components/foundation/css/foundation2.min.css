@@ -973,7 +973,7 @@ hr {
 	margin:1.25rem auto
 }
 dl,ol,ul {
-	list-style-position:outside
+	list-style-position:inside;
 }
 li {
 	font-size:inherit
