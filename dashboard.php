@@ -1,3 +1,7 @@
+<?php
+	include('session.php');
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -30,7 +34,7 @@
               <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
                 <li><a class="subitem" href="#">Help</a></li>
-                <li><a class="subitem" href="#">Logout</a></li>
+                <li><a class="subitem" href="logout.php">Logout</a></li>
               </ul>
             </li>
             <li>

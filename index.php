@@ -1,3 +1,10 @@
+<?php
+	include('login.php');
+	
+	if(isset($_SESSION['login_user'])){
+		header("Location: dashboard.php");
+	}
+?>
 
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
@@ -43,15 +50,16 @@
 					<div class="row">
 						<div class="large-9 small-centered columns"><h4><b>IndiHome Cluster Digitalization</b></h4></div>
 						<div class="large-9 small-centered columns"><h6>Witel Semarang</h6></div><br>
-						<form action="" method="">
+						<form action="" method="post">
+							<span><?php echo $error; ?></span>
 							<div class="large-9 small-centered columns">
-								<input type="text" placeholder="Username" />
+								<input type="text" placeholder="Username" name="username"/>
 							</div>
 							<div class="large-9 small-centered columns">
-								<input type="password" placeholder="Password" />
+								<input type="password" placeholder="Password" name="password"/>
 							</div>
 							<div class="large-9 small-centered columns">
-								<button class="button tiny expand round" name="Login" type="submit">Login</button>
+								<button class="button tiny expand round" name="login" type="submit">Login</button>
 							</div>	
 						</form>	
 						<div class="large-9 small-centered columns"><a href="#">Create new account</a></div>
