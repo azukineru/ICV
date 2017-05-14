@@ -1,3 +1,10 @@
+<?php
+	include('login.php');
+	
+	if(isset($_SESSION['login_user'])){
+		header("Location: dashboard.php");
+	}
+?>
 
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
