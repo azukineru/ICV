@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICV | View 9 Segments</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+  <title>ICD | Customer Segments</title>
+
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 
@@ -19,16 +21,14 @@
     <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
         <div class="row column">
           <br>
-          <a href="dashboard.html"><img src="image/logo-telkom.png "></a>
+          <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
           <hr>
-          <a href="dashboard.html"><h4>Dashboard</h4></a>
+          <a href="dashboard.php"><h4>IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>
-              <a href="#">Account</a>
+              <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">My Profile  </a></li>
-                <li><a class="subitem" href="#">Account Settings</a></li>
                 <li><a class="subitem" href="#">Help</a></li>
                 <li><a class="subitem" href="#">Logout</a></li>
               </ul>
@@ -36,7 +36,7 @@
             <li>
               <a href="#">App</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">Customer Segments</a></li>
+                <li><a class="subitem" href="page_view-segments.php">Customer Segments</a></li>
               </ul>
             </li>
           </ul>
@@ -58,7 +58,7 @@
           <div class="large-6 large-offset-1 column" style="margin-top: 60px;">
             <ul id="da-thumbs" class="da-thumbs">
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment G</u></h4>
@@ -68,7 +68,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment H</u></h4>
@@ -78,7 +78,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment L</u></h4>
@@ -88,7 +88,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment D</u></h4>
@@ -98,7 +98,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment E</u></h4>
@@ -108,7 +108,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment F</u></h4>
@@ -118,7 +118,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment A</u></h4>
@@ -128,7 +128,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment B</u></h4>
@@ -138,7 +138,7 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.html">
+                <a href="page_view-listcluster.php">
                   <img src="http://placehold.it/160x160">
                   <div>
                     <h4><u>Segment C</u></h4>
@@ -174,8 +174,8 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/foundation.js"></script>
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script>
       $(document).foundation();

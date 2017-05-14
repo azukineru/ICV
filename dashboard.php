@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICV | Dashboard</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+  <title>ICD | Dashboard</title>
+
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 
@@ -19,16 +21,14 @@
       <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
         <div class="row column">
           <br>
-          <a href="dashboard.html"><img src="image/logo-telkom.png "></a>
+          <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
           <hr>
-          <a href="dashboard.html"><h4>Dashboard</h4></a>
+          <a href="dashboard.php"><h4>IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>
-              <a href="#">Account</a>
+              <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">My Profile</a></li>
-                <li><a class="subitem" href="#">Account Settings</a></li>
                 <li><a class="subitem" href="#">Help</a></li>
                 <li><a class="subitem" href="#">Logout</a></li>
               </ul>
@@ -36,7 +36,7 @@
             <li>
               <a href="#">App</a>
               <ul class="menu vertical sublevel-1">
-              <li><a class="subitem" href="page_view-segments.html">Customer Segments</a></li>
+              <li><a class="subitem" href="page_view-segments.php">Customer Segments</a></li>
               </ul>
             </li>
           </ul>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="row large-12">
-          <div class="row">
+          <div class="row inner">
             <h1>Welcome, admin !</h1>
             <p class="lead">
               This is the dashboard page, you can navigate to all of the applications feature from here.
@@ -70,8 +70,8 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/foundation.js"></script>
   <script>
     $(document).foundation();
   </script>

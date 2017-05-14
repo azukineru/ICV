@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICV | Segment L</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+  <title>ICD | Segment L</title>
+  
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
 
     <div class="large-3 position-left reveal-for-large my-info dashboard-L" data-off-canvas data-position="left">
         <div class="row">
-          <a href="page_view-segments.html"><i class="fi-arrow-left medium"> Back</i></a>
+          <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
         </div>
       </div>
 
@@ -36,16 +37,16 @@
           <table class="table-cluster" style="">
             <tbody>
               <tr>
-                <td><a href="page_view-datacluster.html">BMK-FAA-BULUSAN</a></td>
+                <td><a href="page_view-datacluster.php">BMK-FAA-BULUSAN</a></td>
               </tr>
               <tr>
-                <td><a href="page_view-datacluster.html">BMK-FAH-NGESREP</a></td>
+                <td><a href="page_view-datacluster.php">BMK-FAH-NGESREP</a></td>
               </tr>
               <tr>
-                <td><a href="page_view-datacluster.html">BMK-FAL-PERUM BUKITSARI</a></td>
+                <td><a href="page_view-datacluster.php">BMK-FAL-PERUM BUKITSARI</a></td>
               </tr>
               <tr>
-                <td><a href="page_view-datacluster.html">BMK-FAL-PERUM BUKITSARI</a></td>
+                <td><a href="page_view-datacluster.php">BMK-FAL-PERUM BUKITSARI</a></td>
               </tr>
 
             </tbody>

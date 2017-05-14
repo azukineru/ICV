@@ -6,21 +6,21 @@
 	<meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ICV | Cluster Data</title>
+	<title>ICD | Cluster Data</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 	<div class="off-canvas-wrapper">
-		<div class="row expanded large-12" style="background-color: red">
+		<div class="row expanded large-12 header-L">
 			<div class="large-3 large-push-1 columns">
-				<a href="page_view-listcluster.html"><i class="fi-arrow-left medium"> Back</i></a>
+				<a href="page_view-listcluster.php"><i class="fi-arrow-left medium"> Back</i></a>
 			</div>
 			<div class="large-9 large-pull-1 columns">
 				<h1 class="right" style="text-align: right;">Cluster something</h1>			

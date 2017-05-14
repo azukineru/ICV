@@ -6,17 +6,17 @@
 	<meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ICV</title>
+	<title>ICD | Welcome to ICD</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
 	<link rel="stylesheet" type="text/css" href="bower_components/foundation/scss/foundation.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="large-12" style="height: 150px; width:100%; background-color: green">
+	<div class="large-12" style="height: 150px; width:100%;">
 	</div>
 	<br>
 	<div class="row">
@@ -74,8 +74,8 @@
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/foundation.js"></script>
 	<script>
 		$(document).foundation();
 	</script>
