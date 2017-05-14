@@ -53,13 +53,13 @@
 						<form action="" method="post">
 							<span><?php echo $error; ?></span>
 							<div class="large-9 small-centered columns">
-								<input type="text" placeholder="Username" />
+								<input type="text" placeholder="Username" name="username"/>
 							</div>
 							<div class="large-9 small-centered columns">
-								<input type="password" placeholder="Password" />
+								<input type="password" placeholder="Password" name="password"/>
 							</div>
 							<div class="large-9 small-centered columns">
-								<button class="button tiny expand round" name="Login" type="submit">Login</button>
+								<button class="button tiny expand round" name="login" type="submit">Login</button>
 							</div>	
 						</form>	
 						<div class="large-9 small-centered columns"><a href="#">Create new account</a></div>
