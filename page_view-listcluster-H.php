@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICD | Segment L</title>
+  <title>ICD | Segment H</title>
   
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
@@ -18,7 +18,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <div class="large-3 position-left reveal-for-large my-info dashboard-L" data-off-canvas data-position="left">
+    <div class="large-3 position-left reveal-for-large my-info dashboard-H" data-off-canvas data-position="left">
         <div class="row">
           <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
         </div>
@@ -34,7 +34,7 @@
         
         <div class="row large-12 table-wrapper" id="scroll">
           <br>
-          <table class="table-cluster" style="">
+          <table class="table-cluster">
             <tbody>
               <tr>
                 <td><a href="page_view-datacluster.php">BMK-FAA-BULUSAN</a></td>

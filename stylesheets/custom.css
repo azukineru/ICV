@@ -72,6 +72,46 @@
 }
 
 /* Specific dashboard style */
+.dashboard-A{
+	background-image: url('../image/segment-A.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-B{
+	background-image: url('../image/segment-B.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-C{
+	background-image: url('../image/segment-C.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-D{
+	background-image: url('../image/segment-D.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-E{
+	background-image: url('../image/segment-E.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-F{
+	background-image: url('../image/segment-F.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-G{
+	background-image: url('../image/segment-G.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-H{
+	background-image: url('../image/segment-H.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
 .dashboard-L{
 	background-image: url('../image/segment-L.png');
 	background-position: top right;
@@ -84,8 +124,8 @@
 }
 
 /* Specific header style */
-.header-L{
-	background-image: url("../image/header-L.png");
+.header-cluster{
+	background-image: url("../image/header-cluster.png");
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -111,4 +151,11 @@ table{
 }
 .map-image img{
 	max-width: 100%;
+}
+
+/* Scroll Box */
+.scroll-box{
+	max-height:400px;
+	width:100%;border:1px solid #ccc;
+	overflow:auto;
 }

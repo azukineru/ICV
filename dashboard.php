@@ -51,11 +51,10 @@
             <span class="title-bar-title">Dashboard</span>
           </div>
         </div>
-        <div class="callout primary">
-          <div class="row column">
 
-          </div>
+        <div class="callout primary show-for-large-up hide-for-small-only">
         </div>
+
         <div class="row large-12">
           <div class="row inner">
             <h1>Welcome, admin !</h1>

@@ -1798,10 +1798,8 @@ select[multiple] {
 .callout {
 	margin:0 0 1rem;
 	padding:1rem;
-	border:1px solid rgba(10,10,10,.25);
 	border-radius:0;
 	position:relative;
-	background-color:#fff
 }
 .callout>:first-child {
 	margin-top:0
@@ -1810,7 +1808,11 @@ select[multiple] {
 	margin-bottom:0
 }
 .callout.primary {
-	background-color:red
+	min-height: 100px;
+	background-image: url("../../../image/header.png");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .callout.primary a {
 	color:#116ca8

@@ -18,7 +18,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
+      <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
         <div class="row column">
           <br>
           <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
@@ -51,15 +51,16 @@
             <span class="title-bar-title">Dashboard</span>
           </div>
         </div>
-        <div class="callout primary">
 
+        <div class="callout primary hide-for-small-only">
         </div>
+
         <div class="row large-12" id="scroll">
           <div class="large-6 large-offset-1 column" style="margin-top: 60px;">
             <ul id="da-thumbs" class="da-thumbs">
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-G.php">
+                  <img src="image/G.png">
                   <div>
                     <h4><u>Segment G</u></h4>
                     <h6>High Market Capability</h6>
@@ -68,8 +69,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-H.php">
+                  <img src="image/H.png">
                   <div>
                     <h4><u>Segment H</u></h4>
                     <h6>High Market Capability</h6>
@@ -78,8 +79,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+              <a href="page_view-listcluster-L.php">
+                  <img src="image/L.png">
                   <div>
                     <h4><u>Segment L</u></h4>
                     <h6>High Market Capability</h6>
@@ -88,8 +89,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-D.php">
+                  <img src="image/D.png">
                   <div>
                     <h4><u>Segment D</u></h4>
                     <h6>Average Market Capability</h6>
@@ -98,8 +99,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-E.php">
+                  <img src="image/E.png">
                   <div>
                     <h4><u>Segment E</u></h4>
                     <h6>Average Market Capability</h6>
@@ -108,8 +109,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-F.php">
+                  <img src="image/F.png">
                   <div>
                     <h4><u>Segment F</u></h4>
                     <h6>Average Market Capability</h6>
@@ -118,8 +119,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-A.php">
+                  <img src="image/A.png">
                   <div>
                     <h4><u>Segment A</u></h4>
                     <h6>Low Market Capability</h6>
@@ -128,8 +129,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-B.php">
+                  <img src="image/B.png">
                   <div>
                     <h4><u>Segment B</u></h4>
                     <h6>Low Market Capability</h6>
@@ -138,8 +139,8 @@
                 </a>
               </li>
               <li>
-                <a href="page_view-listcluster.php">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-C.php">
+                  <img src="image/C.png">
                   <div>
                     <h4><u>Segment C</u></h4>
                     <h6>Low Market Capability</h6>
@@ -147,7 +148,6 @@
                   </div>
                 </a>
               </li>
-              <!-- ... -->
             </ul>
           </div>
 
@@ -166,28 +166,43 @@
                   </div>
                 </div>
               </div>
-            </div>
 
+              <!--
+              <div class="scroll-box">
+                <table class="table-cluster">
+                <tbody>
+                  <tr>
+                    <td><a href="page_view-datacluster.php"></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="page_view-datacluster.php"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            -->
           </div>
+
         </div>
-
       </div>
+
     </div>
+  </div>
 
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/foundation.js"></script>
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-    <script>
-      $(document).foundation();
-      $(function() {
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/foundation.js"></script>
+  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+  <script>
+    $(document).foundation();
+    $(function() {
 
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir({
-          hoverDelay : 75
-        }); } );
+      $(' #da-thumbs > li ').each( function() { $(this).hoverdir({
+        hoverDelay : 75
+      }); } );
 
-      });
-    </script>
-  </body>
-  </html>
+    });
+  </script>
+</body>
+</html>
 
 
