@@ -1,43 +1,47 @@
+<?php
+  include('session.php');
+  include('searchclust.php');
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICV | View 9 Segments</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+  <title>ICD | Customer Segments</title>
+
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-      <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
+      <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
         <div class="row column">
           <br>
-          <a href="dashboard.html"><img src="image/logo-telkom.png "></a>
+          <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
           <hr>
-          <a href="dashboard.html"><h4>Dashboard</h4></a>
+          <a href="dashboard.php"><h4>IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>
-              <a href="#">Account</a>
+              <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">My Profile  </a></li>
-                <li><a class="subitem" href="#">Account Settings</a></li>
-                <li><a class="subitem" href="#">Help</a></li>
-                <li><a class="subitem" href="#">Logout</a></li>
+                <li><a class="subitem" href="page_help.php">Help</a></li>
+                <li><a class="subitem" href="logout.php">Logout</a></li>
               </ul>
             </li>
             <li>
               <a href="#">App</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">View 9 Segments</a></li>
-                <li><a class="subitem" href="#">Thing 2</a></li>
+                <li><a class="subitem" href="page_view-segments.php">Customer Segments</a></li>
               </ul>
             </li>
           </ul>
@@ -52,17 +56,16 @@
             <span class="title-bar-title">Dashboard</span>
           </div>
         </div>
-        <div class="callout primary">
-          <div class="row column">
-            <h1>9 Segments Classification</h1>
-          </div>
+
+        <div class="callout primary hide-for-small-only">
         </div>
+
         <div class="row large-12" id="scroll">
-          <div class="large-6 large-offset-1 column">
-            <ul id="da-thumbs" class="da-thumbs">
+          <div class="large-6 large-offset-1 column" style="margin-top: 60px;">
+            <ul id="da-thumbs" class="da-thumbs inner">
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-G.php">
+                  <img src="image/G.png">
                   <div>
                     <h4><u>Segment G</u></h4>
                     <h6>High Market Capability</h6>
@@ -71,8 +74,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-H.php">
+                  <img src="image/H.png">
                   <div>
                     <h4><u>Segment H</u></h4>
                     <h6>High Market Capability</h6>
@@ -81,8 +84,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-L.php">
+                  <img src="image/L.png">
                   <div>
                     <h4><u>Segment L</u></h4>
                     <h6>High Market Capability</h6>
@@ -91,8 +94,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-D.php">
+                  <img src="image/D.png">
                   <div>
                     <h4><u>Segment D</u></h4>
                     <h6>Average Market Capability</h6>
@@ -101,8 +104,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-E.php">
+                  <img src="image/E.png">
                   <div>
                     <h4><u>Segment E</u></h4>
                     <h6>Average Market Capability</h6>
@@ -111,8 +114,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-F.php">
+                  <img src="image/F.png">
                   <div>
                     <h4><u>Segment F</u></h4>
                     <h6>Average Market Capability</h6>
@@ -121,8 +124,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-A.php">
+                  <img src="image/A.png">
                   <div>
                     <h4><u>Segment A</u></h4>
                     <h6>Low Market Capability</h6>
@@ -131,8 +134,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-B.php">
+                  <img src="image/B.png">
                   <div>
                     <h4><u>Segment B</u></h4>
                     <h6>Low Market Capability</h6>
@@ -141,8 +144,8 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="http://placehold.it/160x160">
+                <a href="page_view-listcluster-C.php">
+                  <img src="image/C.png">
                   <div>
                     <h4><u>Segment C</u></h4>
                     <h6>Low Market Capability</h6>
@@ -150,19 +153,44 @@
                   </div>
                 </a>
               </li>
-              <!-- ... -->
             </ul>
           </div>
 
-          <div class="large-4 large-offset-1 column" style="background-color: red">
-            <p>Something</p>
-          </div>
-
-          <hr>
-          <div class="row">
-            <div class="large-6 small-centered columns dashboard_footer">
-              <p>Copyright © 2017 - Telkom Indonesia</p>
+          <div class="large-4 large-pull-1 column inner" style="margin-top: 40px;">
+            <div class="row">
+              <h3>Customer Segmentation</h3>
             </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <form action="" method="post">
+                    <div class="small-9 columns">
+                     <input type="text" placeholder="Type cluster name here" name="nameclust">
+                   </div>
+                   <div class="small-3 columns">
+                     <button class="button postfix round" type="submit" name="search">Search</button>
+                   </div>
+                 </form>
+               </div>
+             </div>
+
+             <div>
+               <?php searchclust(); ?>
+             </div>
+              <!--
+              <div class="scroll-box">
+                <table class="table-cluster">
+                <tbody>
+                  <tr>
+                    <td><a href="page_view-datacluster.php"></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="page_view-datacluster.php"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            -->
           </div>
 
         </div>
@@ -171,8 +199,8 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/foundation.js"></script>
   <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
   <script>
     $(document).foundation();

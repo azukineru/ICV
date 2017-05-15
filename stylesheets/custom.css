@@ -1,3 +1,28 @@
+@media screen and (max-width: 500px){
+	body{
+		overflow-x: hidden;
+	}
+}
+
+/* Header for index page */
+.header-index{
+	height: 150px;
+	width:100%;
+	background-image: url('../image/header.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+/* Inner padding */
+.inner{
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
 /* Footer */
 #footer{
 	position: absolute;
@@ -8,12 +33,13 @@
 	text-align: center;
 }
 
-.dashboard_footer p{
-	text-align: center;
+/* full-height */
+.full-height{
+	height: 100%;
 }
 
 /* Sidebar nav */
-#my-info{
+.my-info{
 	position: fixed;
 	height: 100%;
 }
@@ -21,9 +47,6 @@
 /* 9 Segments */
 .da-thumbs li {
 	float: left;
-	margin: 5px;
-	background: red;
-	padding: 8px;
 	position: relative;
 	list-style: none;
 	display: flex;
@@ -45,4 +68,147 @@
 	text-align: center;
 	align-self: center;
 	color: white;
+}
+
+/* Segment Table View */
+.left-side{
+	height: 100%;
+}
+
+.right-side{
+	min-height: 100%;
+	float: right;
+}
+
+/* Border in Index page */
+@media screen and (min-width: 500px){
+	.desktop-only{
+		border-right: 5px solid #FF9286;
+		border-right-style: dashed;
+	}
+}
+
+/* Specific dashboard style */
+.dashboard-A{
+	background-image: url('../image/segment-A.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-B{
+	background-image: url('../image/segment-B.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-C{
+	background-image: url('../image/segment-C.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-D{
+	background-image: url('../image/segment-D.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-E{
+	background-image: url('../image/segment-E.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-F{
+	background-image: url('../image/segment-F.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-G{
+	background-image: url('../image/segment-G.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-H{
+	background-image: url('../image/segment-H.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.dashboard-L{
+	background-image: url('../image/segment-L.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 500px){
+	.dashboard-L, .dashboard-H, .dashboard-G, .dashboard-F, .dashboard-E, .dashboard-D, .dashboard-C, .dashboard-B, .dashboard-A{
+		display: none;
+	}
+}
+
+/* Specific header style */
+.header-cluster{
+	background-image: url("../image/header-cluster.png");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+/* Table Cluster list */
+.table-cluster{
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+	width: 90%;
+}
+table{
+	border-collapse: separate;
+}
+.table-cluster tbody tr td{
+	text-align: center;
+}
+
+/* Map content */
+.map-content{
+	background-color: white;
+	height: 100%;
+}
+@media screen and (max-width: 500px){
+	.map-content{
+		height: auto;
+	}
+}
+.map-image img{
+	max-width: 100%;
+}
+
+/* Scroll Box */
+.scroll-box{
+	max-height:400px;
+	width:100%;border:1px solid #ccc;
+	overflow:auto;
+}
+
+/* Background Color */
+.bg-red{
+	background-color: red;
+}
+.bg-white{
+	background-color: white;
+}
+
+/* Text Align */
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+
+/* Text Color */
+.text-white{
+	color: white;
+}
+.text-red{
+	color: red;
+}
+.text-black{
+	color: black;
 }
