@@ -1,29 +1,24 @@
-# Foundation Compass Template
+# IndiHome Cluster Digitalization
 
-The easiest way to get started with Foundation + Compass.
+Web application which used for visualize every cluster that located in Witel Semarang.
 
-## Requirements
+## Contributor :
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+  * Abdulloh Al Mubarok
+  * Aifatul Vipta Fitria El Indri
+  * Faishal Azka Jellyanto
+  * Fauzi Rachman
+  * Firman Adendro
+  * Hanif
+  * Julika Givary
+  * Nicky Yudha Ananda
+  * Okky Pratama Putra
+  * Taqiyya Najiatullah
+  * Tara Damayanti
+  * Yafis Sukma Kurniawan
 
-## Quickstart
+## Supervisor :
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
-
-```bash
-bundle exec compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+  * Toni Agusman
+  * M Rizky Pratama
+  * Paula Tiarma
