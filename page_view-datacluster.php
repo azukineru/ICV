@@ -1,5 +1,16 @@
 <?php
-include('session.php');
+	include('session.php');
+	include('datalist.php');
+	
+	$segment=$_GET['segment'];
+	$no=$_GET['no'];
+	$search=$_GET['search'];
+	
+	if($search==1){
+		$backpage='page_view-segments.php';
+	}else{
+		$backpage='page_view-listcluster-'.$segment.'.php';
+	}
 ?>
 
 <!DOCTYPE html>
@@ -23,22 +34,22 @@ include('session.php');
 	<div class="off-canvas-wrapper">
 		<div class="row expanded large-12 header-cluster hide-for-small-only">
 			<div class="large-3 large-push-1 columns">
-				<a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
+				<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
 			</div>
 			<div class="large-9 large-pull-1 columns">
-				<h1 class="right text-white text-center">Cluster something</h1>			
+				<h1 class="right text-white text-center"><?php clustername($no); ?></h1>			
 			</div>
 		</div>	
 
 		<div class="row expanded large-12" style="height:100%;">
 			<div class="title-bar hide-for-large">
 				<div class="title-bar-left">
-					<a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
+					<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
 				</div>
 			</div>
 			<div class="title-bar hide-for-large bg-red">
 				<div class="title-bar-right">
-					<h2>Cluster something</h2>
+					<h2><?php clustername($no); ?></h2>
 				</div>
 			</div>
 			<div class="large-5 columns position-left map-content inner" role="content">
@@ -55,29 +66,9 @@ include('session.php');
 				<br>
 				<h3>Cluster Data</h3>
 				<ul>
-					<li>HS2</li>
-					<li>Tipe Cluster</li>
-					<li>Jenis Cluster</li>
-					<li>125 Household</li>
-					<li>Harga Rumah > 800 juta</li>
-					<li>Kompetitor tidak ada</li>
-					<li>Expanding Territory (teritori tumbuh)</li>
-					<li>35 rumah sudah LIS Telkom</li>
-					<li>Kapasitas Jaringan 0</li>
-					<li>Reading FO</li>
-					<li>Koordinat Tagging -7.0121, 110.4002</li>
-					<li>ODC : FU / ODP : ODP-SMC-FU</li>
-					<li>Domination Low</li>
-					<li>Priority Medium</li>
-					<li>PIC : CAP</li>
-					<li>Kode Action G3</li>
-					<li>Penetrate</li>
-					<li>Deluxe-Premium Smart Home/Cluster-UpSales-Partnership Infra</li>
-					<li>Jumlah ODP = 28</li>
-					<li>ISI = 32</li>
-					<li>AVAI = 192</li>
-					<li>KAP 224</li>
-					<li>Karakteristik Penghuni: Chinese, rumah mewah, ketemu janjian</li>
+					<?php
+						datalist($no);
+					?>
 				</ul>
 			</aside>
 		</div>

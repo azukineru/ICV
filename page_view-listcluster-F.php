@@ -1,3 +1,8 @@
+<?php
+	include('session.php'); 
+	include('clusterlist.php');
+?>	 
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -35,18 +40,10 @@
           <br>
           <table class="table-cluster">
             <tbody>
-              <tr>
-                <td><a href="page_view-datacluster.php">BMK-FAA-BULUSAN</a></td>
-              </tr>
-              <tr>
-                <td><a href="page_view-datacluster.php">BMK-FAH-NGESREP</a></td>
-              </tr>
-              <tr>
-                <td><a href="page_view-datacluster.php">BMK-FAL-PERUM BUKITSARI</a></td>
-              </tr>
-              <tr>
-                <td><a href="page_view-datacluster.php">BMK-FAL-PERUM BUKITSARI</a></td>
-              </tr>
+              
+				<?php
+					clusterlist('F');
+				?>
 
             </tbody>
           </table>

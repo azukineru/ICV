@@ -23,7 +23,7 @@
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="large-12" style="height: 150px; width:100%; background-image: url('image/header.png'); background-position: top left;background-repeat: no-repeat;background-size: 100%">
+	<div class="large-12 header-index">
 	</div>
 	<br>
 	<div class="row">
@@ -36,7 +36,7 @@
 						</div>
 						<br>
 						<div class="small-8 small-centered columns">
-							<img src="image/logo-jago.jpg">
+							<img src="image/logo-jago.png">
 						</div>
 						<br>
 					</div>
@@ -51,8 +51,9 @@
 						<div class="large-9 small-centered columns"><h4><b>IndiHome Cluster Digitalization</b></h4></div>
 						<div class="large-9 small-centered columns"><h6>Witel Semarang</h6></div><br>
 						<form action="" method="post">
-							<span><?php echo $error; ?></span>
+							
 							<div class="large-9 small-centered columns">
+								<span><?php echo $error; ?></span>							
 								<input type="text" placeholder="Username" name="username"/>
 							</div>
 							<div class="large-9 small-centered columns">

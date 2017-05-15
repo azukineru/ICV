@@ -1,5 +1,6 @@
 <?php
-include('session.php');
+  include('session.php');
+  include('searchclust.php');
 ?>
 
 <!doctype html>
@@ -33,8 +34,8 @@ include('session.php');
             <li>
               <a href="#">Dashboard</a>
               <ul class="menu vertical sublevel-1">
-                <li><a class="subitem" href="#">Help</a></li>
-                <li><a class="subitem" href="#">Logout</a></li>
+                <li><a class="subitem" href="page_help.php">Help</a></li>
+                <li><a class="subitem" href="logout.php">Logout</a></li>
               </ul>
             </li>
             <li>
@@ -162,15 +163,20 @@ include('session.php');
             <div class="row">
               <div class="large-12 columns">
                 <div class="row collapse">
-                  <div class="small-9 columns">
-                    <input type="text" placeholder="Type cluster name here" >
-                  </div>
-                  <div class="small-3 columns">
-                    <button class="button postfix round" type="submit">Search</button>
-                  </div>
-                </div>
-              </div>
+                  <form action="" method="post">
+                    <div class="small-9 columns">
+                     <input type="text" placeholder="Type cluster name here" name="nameclust">
+                   </div>
+                   <div class="small-3 columns">
+                     <button class="button postfix round" type="submit" name="search">Search</button>
+                   </div>
+                 </form>
+               </div>
+             </div>
 
+             <div>
+               <?php searchclust(); ?>
+             </div>
               <!--
               <div class="scroll-box">
                 <table class="table-cluster">

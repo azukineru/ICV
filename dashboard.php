@@ -64,7 +64,6 @@
             <h1>Welcome, admin !</h1>
             <p class="lead">
               This is the dashboard page, you can navigate to all of the applications feature from here.
-              Foundation Compass Template
             </p>
           </div>
 

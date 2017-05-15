@@ -4,6 +4,17 @@
 	}
 }
 
+/* Header for index page */
+.header-index{
+	height: 150px;
+	width:100%;
+	background-image: url('../image/header.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+/* Inner padding */
 .inner{
 	padding-left: 20px;
 	padding-right: 20px;

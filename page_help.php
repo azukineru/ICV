@@ -67,7 +67,7 @@
             <p class="lead">
               <ol>
                 <li>What is this website used for ?</li>This website is used to visualize every clusters which located in Witel Semarang. Every clusters have their own coordinate in map. The main purposes are to give map illustration to employee and ease them when working on that cluster.<br><br>
-                <li>How do I use this ?</li>Simply click 'Customer Segments' option on the App menu. You can pick and choose segment that you want to explore. After that, website will show you the list of all clusters which belong to that segment. You may click on of those clusters, and our website will give you the detail of that cluster.
+                <li>How do I use this ?</li>Simply click 'Customer Segments' option on the App menu. You can pick and choose segment that you want to explore. After that, website will show you the list of all clusters which belong to that segment. You may click on one of those clusters, and our website will give you the detail of that cluster.
               </ol>
             </p>
           </div>
