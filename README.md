@@ -1,6 +1,6 @@
 # IndiHome Cluster Digitalization
 
-Web application which used for visualize every cluster that located in Witel Semarang.
+Web application which is used to visualize every cluster that located in Witel Semarang.
 
 ## Contributor :
 
