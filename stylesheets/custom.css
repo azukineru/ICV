@@ -165,11 +165,11 @@ table{
 /* Map content */
 .map-content{
 	background-color: white;
-	height: 100%;
+	min-height: 100%;
 }
 @media screen and (max-width: 500px){
 	.map-content{
-		height: auto;
+		min-height: auto;
 	}
 }
 .map-image img{
@@ -211,4 +211,5 @@ table{
 }
 .text-black{
 	color: black;
-}
+
+/* Progress Bar */

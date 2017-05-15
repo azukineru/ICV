@@ -19,8 +19,10 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/foundation/scss/foundation.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
-
+	<link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+	<script type="text/javascript" src="js/pace.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
+
 </head>
 <body>
 	<div class="large-12 header-index">
@@ -32,7 +34,7 @@
 				<div class="large-9 small-centered columns">
 					<div class="row">
 						<div class="small-8 small-centered columns">
-							<img src="image/logo-telkom.png">
+							<img src="image/logo-telkom-big.png">
 						</div>
 						<br>
 						<div class="small-8 small-centered columns">
@@ -48,7 +50,7 @@
 			<div class="row">
 				<div class="large-9 small-centered columns">
 					<div class="row">
-						<div class="large-9 small-centered columns"><h4><b>IndiHome Cluster Digitalization</b></h4></div>
+						<div class="large-9 small-centered columns"><h3><b style="color: #874d78">IndiHome</b><b style="color: #cc5d47"> Cluster</b><b style="color: #ec8b7b"> Digitalization</b></h3></div>
 						<div class="large-9 small-centered columns"><h6>Witel Semarang</h6></div><br>
 						<form action="" method="post">
 							
@@ -85,6 +87,7 @@
 
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/foundation.js"></script>
+	
 	<script>
 		$(document).foundation();
 	</script>

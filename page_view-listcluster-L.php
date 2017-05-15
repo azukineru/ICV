@@ -1,6 +1,6 @@
 <?php
-	include('session.php'); 
-	include('clusterlist.php');
+include('session.php'); 
+include('clusterlist.php');
 ?>
 
 <!doctype html>
@@ -15,7 +15,8 @@
   <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
-
+  <link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+  <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
@@ -23,7 +24,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <div class="large-3 position-left reveal-for-large my-info dashboard-L" data-off-canvas data-position="left">
+      <div class="large-3 position-left reveal-for-large my-info dashboard-L" data-off-canvas data-position="left">
         <div class="row">
           <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
         </div>
@@ -41,9 +42,9 @@
           <table class="table-cluster">
             <tbody>
               
-				<?php
-					clusterlist('L');
-				?>
+              <?php
+              clusterlist('L');
+              ?>
 
             </tbody>
           </table>

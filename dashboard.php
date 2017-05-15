@@ -1,5 +1,5 @@
 <?php
-	include('session.php');
+include('session.php');
 ?>
 
 <!doctype html>
@@ -14,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
-
+  <link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+  <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
@@ -26,8 +27,7 @@
         <div class="row column">
           <br>
           <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
-          <hr>
-          <a href="dashboard.php"><h4>IndiHome Cluster Digitalization</h4></a>
+          <a href="dashboard.php"><h4 class="text-center">IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>
@@ -40,7 +40,7 @@
             <li>
               <a href="#">App</a>
               <ul class="menu vertical sublevel-1">
-              <li><a class="subitem" href="page_view-segments.php">Customer Segments</a></li>
+                <li><a class="subitem" href="page_view-segments.php">Customer Segments</a></li>
               </ul>
             </li>
           </ul>

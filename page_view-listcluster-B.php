@@ -1,6 +1,6 @@
 <?php
-	include('session.php'); 
-	include('clusterlist.php');
+include('session.php'); 
+include('clusterlist.php');
 ?>					 					
 <!doctype html>
 <html class="no-js" lang="en">
@@ -14,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
-
+  <link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+  <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-    <div class="large-3 position-left reveal-for-large my-info dashboard-B" data-off-canvas data-position="left">
+      <div class="large-3 position-left reveal-for-large my-info dashboard-B" data-off-canvas data-position="left">
         <div class="row">
           <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
         </div>
@@ -40,23 +41,23 @@
           <table class="table-cluster">
             <tbody>
               
-			  <?php
-					clusterlist('B');
-				?>
+             <?php
+             clusterlist('B');
+             ?>
 
-            </tbody>
-          </table>
-        </div>
-      </div>
+           </tbody>
+         </table>
+       </div>
+     </div>
 
-    </div>
-  </div>
+   </div>
+ </div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+ <script>
+  $(document).foundation();
+</script>
 </body>
 </html>
 

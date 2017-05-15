@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../../fonts/bebasneue-webfont.woff2') format('woff2'),
+         url('../../../fonts/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 meta.foundation-version {
   font-family: "/5.5.3/"; }
 
@@ -5298,7 +5307,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'bebas_neueregular', "Comic Sans MS";
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;

@@ -1,16 +1,16 @@
 <?php
-	include('session.php');
-	include('datalist.php');
-	
-	$segment=$_GET['segment'];
-	$no=$_GET['no'];
-	$search=$_GET['search'];
-	
-	if($search==1){
-		$backpage='page_view-segments.php';
-	}else{
-		$backpage='page_view-listcluster-'.$segment.'.php';
-	}
+include('session.php');
+include('datalist.php');
+
+$segment=$_GET['segment'];
+$no=$_GET['no'];
+$search=$_GET['search'];
+
+if($search==1){
+	$backpage='page_view-segments.php';
+}else{
+	$backpage='page_view-listcluster-'.$segment.'.php';
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
-
+	<link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+	<script type="text/javascript" src="js/pace.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
@@ -57,7 +58,7 @@
 				<h3>Map</h3>
 				<div class="row">
 					<div class="large-9 small-centered columns map-image">
-						<img class="thumbnail" src="http://placehold.it/800x500">
+						<img class="thumbnail" src="image/maps/<?php echo $no; ?>.png">
 					</div>
 				</div>
 			</div>
@@ -67,7 +68,7 @@
 				<h3>Cluster Data</h3>
 				<ul>
 					<?php
-						datalist($no);
+					datalist($no);
 					?>
 				</ul>
 			</aside>
