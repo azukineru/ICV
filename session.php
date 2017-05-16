@@ -10,8 +10,7 @@
 	
 	$login_session=$row['username'];
 	
-	if(!isset($login_session)){
-		mysqli_close($con);
-		//header('Location:index.php');
-	}
+	if(!isset($_SESSION['login_user'])){
+    	header("Location: index.php");
+  	}
 ?>
