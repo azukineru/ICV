@@ -167,13 +167,40 @@ table{
 	background-color: white;
 	min-height: 100%;
 }
+.map-image{
+	height: 88vh;
+	position: relative;
+}
+.map-image img{
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 @media screen and (max-width: 500px){
 	.map-content{
 		min-height: auto;
 	}
+	.map-image{
+		height: auto;
+	}
+	.map-image img{
+		min-height:auto;
+		min-width: 100%;
+	}
 }
-.map-image img{
-	max-width: 100%;
+
+/* Button for Cluster Data */
+.button-cluster{
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	top: 47.5%;
+	right: 0;
+	z-index: 100;
+	background-image: url('../image/button-cluster.png');
+	background-position: top left;
+	background-size: 100%;
 }
 
 /* Scroll Box */

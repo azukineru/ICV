@@ -2897,7 +2897,6 @@ table.hover tr:nth-of-type(even):hover {
 	max-width:100%;
 	transition:box-shadow .2s ease-out;
 	border-radius:0;
-	margin-bottom:1rem
 }
 .thumbnail:focus,.thumbnail:hover {
 	box-shadow:0 0 6px 1px rgba(33,153,232,.5)

@@ -27,13 +27,14 @@ if($search==1){
 	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/menu.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
 	<script type="text/javascript" src="js/pace.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
 	<div class="off-canvas-wrapper">
-		<div class="row expanded large-12 header-cluster hide-for-small-only">
+		<div class="row expanded large-12 header-cluster hide-for-small-only" style="height: 10vh; margin-bottom: 0;">
 			<div class="large-3 large-push-1 columns">
 				<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
 			</div>
@@ -42,7 +43,7 @@ if($search==1){
 			</div>
 		</div>	
 
-		<div class="row expanded large-12" style="height:100%;">
+		<div class="row expanded large-12" style="padding: 0;">
 			<div class="title-bar hide-for-large">
 				<div class="title-bar-left">
 					<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
@@ -53,6 +54,14 @@ if($search==1){
 					<h2><?php clustername($no); ?></h2>
 				</div>
 			</div>
+
+			<div class="expanded large-12 map-image">
+				<img class="thumbnail" src="image/maps/<?php echo $no; ?>.png">				
+				<div class="button-cluster">					
+				</div>
+			</div>
+
+			<?php /*
 			<div class="large-5 columns position-left map-content inner" role="content">
 				<br>
 				<h3>Map</h3>
@@ -72,10 +81,51 @@ if($search==1){
 					?>
 				</ul>
 			</aside>
+			*/ ?>
 		</div>
 	</div>
+
+	<div id="o-wrapper" class="o-wrapper">
+		<main class="o-content">
+			<div class="o-container">
+				<div class="c-buttons">
+					<button id="c-button--slide-right" class="c-button">Slide Right</button>
+				</div>
+			</div><!-- /o-container -->
+		</main><!-- /o-content -->
+	</div><!-- /o-wrapper -->
+
+	<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+		<button class="c-menu__close">Close Menu &rarr;</button>
+		<ul class="c-menu__items">
+			<li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+			<li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+			<li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+			<li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+			<li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+		</ul>
+	</nav><!-- /c-menu slide-right -->
+
+	<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+	<script type="text/javascript" src="js/cluster-menu.js"></script>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/foundation.js"></script>
+	<script>
+		var slideRight = new Menu({
+			wrapper: '#o-wrapper',
+			type: 'slide-right',
+			menuOpenerClass: '.c-button',
+			maskId: '#c-mask'
+		});
+
+		var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+		slideRightBtn.addEventListener('click', function(e) {
+			e.preventDefault;
+			slideRight.open();
+		});
+	</script>
 	<script>
 		$(document).foundation();
 	</script>
