@@ -33,8 +33,8 @@ if($search==1){
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="off-canvas-wrapper">
-		<div class="row expanded large-12 header-cluster hide-for-small-only" style="height: 10vh; margin-bottom: 0;">
+	<div class="off-canvas-wrapper"  style="background-color: green;">
+		<div class="row expanded large-12 header-cluster hide-for-small-only" style="height: 10vh;">
 			<div class="large-3 large-push-1 columns">
 				<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
 			</div>
@@ -43,7 +43,7 @@ if($search==1){
 			</div>
 		</div>	
 
-		<div class="row expanded large-12" style="padding: 0;">
+		<div class="row expanded large-12">
 			<div class="title-bar hide-for-large">
 				<div class="title-bar-left">
 					<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
