@@ -164,7 +164,6 @@ table{
 
 /* Map content */
 .map-content{
-	background-color: white;
 	min-height: 100%;
 }
 @media screen and (max-width: 500px){

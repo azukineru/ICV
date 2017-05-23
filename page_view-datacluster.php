@@ -42,7 +42,7 @@ if($search==1){
 			</div>
 		</div>	
 
-		<div class="row expanded large-12" style="height:100%;">
+		<div class="row expanded large-12">
 			<div class="title-bar hide-for-large">
 				<div class="title-bar-left">
 					<a href="<?php echo $backpage; ?>"><i class="fi-arrow-left medium"> Back</i></a>
@@ -66,10 +66,13 @@ if($search==1){
 			<aside class="large-7 columns float-right inner" style="height: 100%; background-color: #DFD9B9;">
 				<br>
 				<h3>Cluster Data</h3>
-				<ul>
+				<ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
 					<?php
 					datalist($no);
 					?>
+				</ul>
+				<ul>
+					
 				</ul>
 			</aside>
 		</div>

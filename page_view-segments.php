@@ -168,7 +168,7 @@ include('searchclust.php');
                      <input type="text" placeholder="Type cluster name here" name="nameclust">
                    </div>
                    <div class="small-3 columns">
-                     <button class="button postfix round" type="submit" name="search">Search</button>
+                     <button class="button postfix round search-style" type="submit" name="search">Search</button>
                    </div>
                  </form>
                </div>

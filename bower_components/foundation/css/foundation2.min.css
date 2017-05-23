@@ -1167,7 +1167,7 @@ p+.stat {
 	margin:0 1rem 1rem 0;
 	font-size:.9rem;
 	background:#2199e8;
-	color:#fff
+	color:#fff;
 }
 [data-whatinput=mouse] .button {
 	outline:0
@@ -1341,9 +1341,13 @@ input:disabled,input[readonly],textarea:disabled,textarea[readonly] {
 	background-color:#e6e6e6;
 	cursor:default
 }
-[type=button],[type=submit] {
+.search-style[type=button], .search-style[type=submit] {
 	border-top-right-radius:20px;
 	border-bottom-right-radius:20px;
+	-webkit-appearance:none;
+	-moz-appearance:none
+}
+[type=button],[type=submit] {
 	-webkit-appearance:none;
 	-moz-appearance:none
 }
@@ -3057,6 +3061,9 @@ table.hover tr:nth-of-type(even):hover {
 	}
 }
 
+.multilevel-accordion-menu .is-accordion-submenu-parent .no-list {
+  background: white;
+}
 
 .multilevel-accordion-menu .is-accordion-submenu-parent a {
   background: #E52027;

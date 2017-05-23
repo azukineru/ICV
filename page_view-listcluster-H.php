@@ -38,15 +38,44 @@ include('clusterlist.php');
         
         <div class="row large-12 table-wrapper" id="scroll">
           <br>
-          <table class="table-cluster">
-            <tbody>
-              
-              <?php
-              clusterlist('H');
-              ?>
+          <div class="row large-12">
+            <div class="inner">
+              <div class="column large-3 float-left">
+                <label>Select Area
+                  <select>
+                    <option value="husker">HS 1</option>
+                    <option value="starbuck">HS 2</option>
+                    <option value="hotdog">Kandatel Ungaran</option>
+                    <option value="apollo">Kandatel Kendal</option>
+                  </select>
+                </label>
+              </div>
+              <div class="column large-3 float-left large-offset-1">
+                <label>Select SOC
+                  <select>
+                    <option value="husker">---</option>
+                  </select>
+                </label>
+              </div>
+              <div class="column large-3 float-left large-offset-1">
+                <label>&nbsp</label>
+                <button class="button expanded" type="submit" name="search">Search</button>
+              </div>
+            </div>
+          </div>
+          <br>
 
-            </tbody>
-          </table>
+          <div class="row large-12">
+            <table class="table-cluster">
+              <tbody>
+
+                <?php
+                clusterlist('H');
+                ?>
+
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
