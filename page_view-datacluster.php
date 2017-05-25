@@ -58,7 +58,13 @@ if($search==1){
 				<h3>Map</h3>
 				<div class="row">
 					<div class="large-9 small-centered columns map-image">
-						<img class="thumbnail" src="image/maps/<?php echo $no; ?>.png">
+						<div class="row">
+							<img id="myImg" class="thumbnail" src="image/maps/<?php echo $no; ?>.png">
+						</div>
+						<div class="row">
+							<a href="<?php map_url($no);?>" target="_blank" class="button" >Map View</a>
+							<a href="<?php satellite_url($no);?>" target="_blank" class="button" >Satellite View</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,11 +82,25 @@ if($search==1){
 				</ul>
 			</aside>
 		</div>
+		<div id="myModal" class="modal hide-for-small-only">
+
+			<!-- The Close Button -->
+			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
+
 	</div>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/foundation.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<script>
 		$(document).foundation();
+		
 	</script>
 </body>
 </html>

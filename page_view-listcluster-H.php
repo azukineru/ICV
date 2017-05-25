@@ -1,7 +1,7 @@
 <?php
 include('session.php'); 
 include('clusterlist.php');
-?>
+?>              
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -18,8 +18,8 @@ include('clusterlist.php');
   <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
-<body>
 
+<body>
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
@@ -40,53 +40,55 @@ include('clusterlist.php');
           <br>
           <div class="row large-12">
             <div class="inner">
-              <div class="column large-3 float-left">
-                <label>Select Area
-                  <select>
-                    <option value="husker">HS 1</option>
-                    <option value="starbuck">HS 2</option>
-                    <option value="hotdog">Kandatel Ungaran</option>
-                    <option value="apollo">Kandatel Kendal</option>
-                  </select>
-                </label>
-              </div>
-              <div class="column large-3 float-left large-offset-1">
-                <label>Select SOC
-                  <select>
-                    <option value="husker">---</option>
-                  </select>
-                </label>
-              </div>
-              <div class="column large-3 float-left large-offset-1">
-                <label>&nbsp</label>
-                <button class="button expanded" type="submit" name="search">Search</button>
-              </div>
+              <form action="" method="post">              
+                <div class="column large-3 float-left">
+                 <label>Select Area
+                    <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">              
+                      <option value=""></option>
+                      <option value="HS 1">HS1</option>
+                      <option value="HS 2">HS2</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="column large-3 float-left large-offset-1">
+                  <label>Select SOC
+                    <select name="SOC" id="ddl2">
+                    </select>
+                  </label>
+                </div>
+                <div class="column large-3 float-left large-offset-1">
+                  <label>&nbsp</label>
+                  <button class="button expanded" type="submit" name="search">Search</button>
+                </div>
+              </form>
             </div>
           </div>
-          <br>
 
           <div class="row large-12">
             <table class="table-cluster">
               <tbody>
-
-                <?php
-                clusterlist('H');
+                <?php     
+                  if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+                    clusterlist('H',$_POST["HS"],$_POST["SOC"]);              
+                  } elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
+                    echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define area and soc.';
+                  }
                 ?>
-
               </tbody>
             </table>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script src="js/ddl.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
 </body>
 </html>
 
