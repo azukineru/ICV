@@ -11,7 +11,7 @@ function clustername($no){
 function map_url($no){
 	$con=mysqli_connect("localhost", "root", "");
 	mysqli_select_db($con, "ojt");
-	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
+	$query=mysqli_query($con, "SELECT * FROM map_data WHERE id_cluster = ".$no);
 	$row=mysqli_fetch_array($query);
 	
 	echo $row['map_url'];

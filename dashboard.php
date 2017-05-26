@@ -1,5 +1,5 @@
 <?php
-  include('session.php');
+include('session.php');
 ?>
 
 <!doctype html>
@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/slider.css" rel="stylesheet">
   <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
@@ -66,6 +67,14 @@
               This is the dashboard page, you can navigate to all of the applications feature from here.
             </p>
           </div>
+          <section class="slideshow">
+            <div class="slideshow-container slide">
+              <img src="image/slide1.jpg"/>
+              <img src="image/slide2.jpg"/>
+              <img src="image/slide3.jpg"/>
+              <img src="image/slide4.jpg"/>
+            </div>
+          </section>
 
         </div>
       </div>

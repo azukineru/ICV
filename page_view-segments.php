@@ -79,7 +79,7 @@ include('searchclust.php');
                   <div>
                     <h4><u>Segment H</u></h4>
                     <h6>High Market Capability</h6>
-                    <h6>Average Network Availability</h6>
+                    <h6>Medium Network Availability</h6>
                   </div>
                 </a>
               </li>
@@ -98,7 +98,7 @@ include('searchclust.php');
                   <img src="image/D.png">
                   <div>
                     <h4><u>Segment D</u></h4>
-                    <h6>Average Market Capability</h6>
+                    <h6>Medium Market Capability</h6>
                     <h6>Low Network Availability</h6>
                   </div>
                 </a>
@@ -108,8 +108,8 @@ include('searchclust.php');
                   <img src="image/E.png">
                   <div>
                     <h4><u>Segment E</u></h4>
-                    <h6>Average Market Capability</h6>
-                    <h6>Average Network Availability</h6>
+                    <h6>Medium Market Capability</h6>
+                    <h6>Medium Network Availability</h6>
                   </div>
                 </a>
               </li>
@@ -118,7 +118,7 @@ include('searchclust.php');
                   <img src="image/F.png">
                   <div>
                     <h4><u>Segment F</u></h4>
-                    <h6>Average Market Capability</h6>
+                    <h6>Medium Market Capability</h6>
                     <h6>High Network Availability</h6>
                   </div>
                 </a>
@@ -139,7 +139,7 @@ include('searchclust.php');
                   <div>
                     <h4><u>Segment B</u></h4>
                     <h6>Low Market Capability</h6>
-                    <h6>Average Network Availability</h6>
+                    <h6>Medium Network Availability</h6>
                   </div>
                 </a>
               </li>
