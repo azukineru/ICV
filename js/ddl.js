@@ -1,7 +1,7 @@
 function configureDropDownLists(ddl1,ddl2) {
-	var HS1 = ['TGU', 'JHR', 'SSL'];
-	var HS2 = ['MJP', 'BMK', 'CANDI'];
-
+	var HS1 = ['All', 'SMT', 'JHR', 'SSL'];
+	var HS2 = ['All', 'MJP', 'BMK', 'SMC'];
+	
 	switch (ddl1.value) {
 		case 'HS 1':
 			ddl2.options.length = 0;
