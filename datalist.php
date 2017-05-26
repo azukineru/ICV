@@ -54,7 +54,7 @@ function datalist($no){
 
 	echo '<li><a href="#">Info ODP :</a>
 	<ul class="no-data menu vertical sublevel-1">
-		<form action="page_view-ODP.php"><button class="button expanded">View List ODP</button></form>
+		<form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form>
 		<li><a class="subitem">Jumlah ODP : '.$row['JML ODP'].'</a></li>
 		<li><a class="subitem">ISI : '.$row['ISI'].'</a></li>
 		<li><a class="subitem">AVAILABLE : '.$row['AVAI'].'</a></li>
