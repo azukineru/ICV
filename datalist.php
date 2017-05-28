@@ -39,6 +39,7 @@ function datalist($no){
 		<li><a class="subitem">Jumlah House Hold (Tenant) : '.$row['Jumlah House Hold (Tenant)'].'</a></li>
 		<li><a class="subitem">Harga Rumah : '.$row['Harga Rumah'].'</a></li>
 		<li><a class="subitem">'.$row['Jumlah Rumah yg Sdh LIS Telkom'].' rumah sudah LIS Telkom</a></li>
+		<form target="_blank" action="custdata.php?no='.$no.'" method="POST"><button class="button expanded">Download Customer Data</button></form>
 	</ul></li>';	
 
 	/*
