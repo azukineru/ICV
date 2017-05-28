@@ -4,18 +4,15 @@
   overflow: hidden;
   border: solid 1px white;
 }
-
 .slideshow-container {
   width: 4000px;
   font-size: 0;
   transition: 1s ease;
   height: 225px;
 }
-
 .slideshow-container:hover {
   animation-play-state: paused;
 }
-
 img, .text-container {
   width: 1000px;
   height: 225px;
@@ -24,6 +21,20 @@ img, .text-container {
   text-align: center;
   align: top left;
 }
+
+@media only screen and (max-width: 500px){
+  .slideshow{
+    width: 360px;
+  }
+  .slideshow-container{
+    width: 1440px;
+    height: 150px;
+  }
+  img{
+    width: 360px;
+  }
+}
+
 
 .text-container {
   height: 225px;
