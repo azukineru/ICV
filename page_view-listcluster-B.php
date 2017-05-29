@@ -71,7 +71,7 @@ include('clusterlist.php');
                   if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
                     clusterlist('B',$_POST["HS"],$_POST["SOC"]);              
                   } elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-                    echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define area and soc.';
+                    echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
                   }
                 ?>
               </tbody>
