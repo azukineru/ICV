@@ -1,9 +1,13 @@
 <?php
-	function clusterlist($segment,$HS,$SOC){
+	function searchparam($segment,$HS,$SOC){
+		echo '<b>';
 		echo '&nbsp&nbsp&nbsp&nbsp&nbspArea: '.$HS;
 		echo ', ';
 		echo 'SOC: '.$SOC;
-		
+		echo '</b>';
+	}
+
+	function clusterlist($segment,$HS,$SOC){	
 		$con=mysqli_connect("localhost", "root", "");
 		mysqli_select_db($con, "ojt");
 			
@@ -25,7 +29,7 @@
 		if(mysqli_num_rows($query)>0){
 			while ($row = mysqli_fetch_array($query)){ 
 				echo '<tr>';
-				echo '<td><a href="page_view-datacluster.php?segment='.$segment.'&no='.$row['No'].'&search=0">'.$row['Nama Cluster'].'</a></td>';  
+				echo '<td><a class="ListCluster" href="#">'.$row['Nama Cluster'].'</a></td>';  
 				echo '</tr>';  
 			}
 		}else{

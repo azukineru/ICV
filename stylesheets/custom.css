@@ -178,8 +178,23 @@ table{
 /* Scroll Box */
 .scroll-box{
 	max-height:400px;
-	width:100%;border:1px solid #ccc;
+	width:100%;
+	border:1px solid #ccc;
 	overflow:auto;
+}
+
+/* Hide show div on List CLuster page */
+#first-column{
+	display:none; 
+	min-height: 500px;
+}
+#second-column{
+	display:none; 
+	min-height: 500px;
+}
+#third-column{
+	display:none; 
+	min-height: 500px;
 }
 
 /* Background Color */
