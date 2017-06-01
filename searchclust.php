@@ -4,6 +4,10 @@
 		mysqli_select_db($con, "ojt");
 		if (isset($_REQUEST['search'])) {
 			$nameclust = mysqli_real_escape_string($con, $_REQUEST['nameclust']);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/experiment2
 			$search_exploded=explode(" ",$nameclust);
 			$count=0; 
 			$construct=" ";
