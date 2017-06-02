@@ -28,7 +28,7 @@ include('searchclust.php');
         <div class="row column">
           <br>
           <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
-          <a href="dashboard.php"><h4 class="text-center">IndiHome Cluster Digitalization</h4></a>
+          <a href="dashboard.php"><h4 class="text-center text-red">IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>

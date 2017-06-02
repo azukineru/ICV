@@ -41,49 +41,93 @@ include('clusterlist.php');
           <div class="row large-12">
             <div class="inner">
               <form action="" method="post">              
-                <div class="column large-3 float-left">
+                <div class="column large-2 float-left">
                  <label>Select Area
-                    <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">              
-                      <option value=""></option>
-                      <option value="HS 1">HS1</option>
-                      <option value="HS 2">HS2</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="column large-3 float-left large-offset-1">
-                  <label>Select SOC
-                    <select name="SOC" id="ddl2">
-                    </select>
-                  </label>
-                </div>
-                <div class="column large-3 float-left large-offset-1">
-                  <label>&nbsp</label>
-                  <button class="button expanded" type="submit" name="search">Search</button>
-                </div>
-              </form>
-            </div>
+                  <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">              
+                    <option value=""></option>
+                    <option value="HS 1">HS1</option>
+                    <option value="HS 2">HS2</option>
+                  </select>
+                </label>
+              </div>
+              <div class="column large-2 float-left large-offset-1">
+                <label>Select SOC
+                  <select name="SOC" id="ddl2">
+                  </select>
+                </label>
+              </div>
+              <div class="column large-2 float-left large-offset-1">
+                <label>Select Battlefield
+                  <select name="Battlefield" id="ddl2">
+                  </select>
+                </label>
+              </div>
+              <div class="column large-2 float-left large-offset-1">
+                <label>&nbsp</label>
+                <button class="button expanded" type="submit" name="search">Search</button>
+              </div>
+            </form>     
           </div>
-
-          <div class="row large-12">
+        </div>
+        
+        <div class="row large-12">
+         <?php
+         if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])){
+          searchparam('F',$_POST["HS"],$_POST["SOC"]);
+          echo "
+          <style type='text/css'>
+              #first-column{
+            display: block;
+          }
+        </style>
+        ";
+      }
+      elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
+        echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
+      }
+      ?>
+      <br><br>
+      
+      <div id="first-column" class="column large-4">
+        <div class="inner">
+          <h3>Area Information</h3>
+          <p>Jumlah Cluster : </p>
+          <p>Jumlah Household : </p>
+          <button class="button" id="viewListCluster">View List Cluster</button>
+        </div>
+      </div>
+      
+      <div id="second-column" class="column large-4">
+        <div class="inner">
+          <h3>List Cluster</h3>
+          <div class="scroll-box">
             <table class="table-cluster">
               <tbody>
                 <?php     
-                  if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
-                    clusterlist('F',$_POST["HS"],$_POST["SOC"]);              
-                  } elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-                    echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
-                  }
+                if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+                  clusterlist('F',$_POST["HS"],$_POST["SOC"]);              
+                }
                 ?>
               </tbody>
             </table>
           </div>
         </div>
       </div>
+      <div id="third-column" class="column large-4">
+        <div class="inner">
+          <h3>List ODC</h3>
+        </div>
+      </div>
+      
     </div>
   </div>
+</div>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script src="js/app.js"></script>
 <script src="js/ddl.js"></script>
 <script>
   $(document).foundation();

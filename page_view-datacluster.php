@@ -58,12 +58,35 @@ if($search==1){
 				<h3>Map</h3>
 				<div class="row">
 					<div class="large-9 small-centered columns map-image">
-						<div class="row">
-							<img id="myImg" class="thumbnail" src="image/maps/<?php echo $no; ?>.png">
+						<div class="row">					
+							<img id="myImg" class="thumbnail" src="<?php
+								$dir = 'image/maps/' . $no . '.png';
+								if( file_exists($dir)){
+									echo $dir;
+								}
+								else{
+									echo 'image/img-not-available.jpg';
+								}
+							?>">
 						</div>
+						
 						<div class="row">
-							<a href="<?php map_url($no);?>" target="_blank" class="button" >Map View</a>
-							<a href="<?php satellite_url($no);?>" target="_blank" class="button" >Satellite View</a>
+							<a href="<?php 
+								$dir = 'image/maps/' . $no . '.png';
+								if( file_exists($dir)){
+									map_url($no);
+								}
+								else{
+									echo '#';
+								}?>" target="_blank" class="button" >Map View</a>
+							<a href="<?php 
+								$dir = 'image/maps/' . $no . '.png';
+								if( file_exists($dir)){
+									satellite_url($no);
+								}
+								else{
+									echo '#';
+								}?>" target="_blank" class="button" >Satellite View</a>
 						</div>
 					</div>
 				</div>
@@ -97,10 +120,10 @@ if($search==1){
 	</div>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/foundation.js"></script>
+	<script type="text/javascript" src="js/modal-image.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script>
 		$(document).foundation();
-		
 	</script>
 </body>
 </html>

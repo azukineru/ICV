@@ -191,10 +191,25 @@ table{
 #second-column{
 	display:none; 
 	min-height: 500px;
+	border-left: 2px solid #000;
 }
 #third-column{
 	display:none; 
 	min-height: 500px;
+	border-left: 2px solid #000
+}
+@media screen and (max-width: 500px){
+	#first-column{
+		min-height: auto;
+	}
+	#second-column{
+		min-height: auto;
+		border-left: none;
+	}
+	#third-column{
+		min-height: auto;
+		border-left: none;
+	}
 }
 
 /* Background Color */

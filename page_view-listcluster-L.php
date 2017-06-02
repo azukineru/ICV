@@ -32,7 +32,7 @@ include('clusterlist.php');
       <div class="large-9 float-right" data-off-canvas-content>
         <div class="title-bar hide-for-large">
           <div class="title-bar-left">
-            <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
+            <a href="page_view-segments.php" ><i class="fi-arrow-left medium"> Back</i></a>
           </div>
         </div>
         
@@ -77,75 +77,59 @@ include('clusterlist.php');
             echo "
             <style type='text/css'>
               #first-column{
-                display: block;
-              }
-            </style>
-            ";
-          }
-          elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-            echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
-          }
-          ?>
-          <br><br>
-          
-          <div id="first-column" class="column small-4" style="">
-            <div class="inner">
-              <h3>Area Information</h3>
-              <p>Jumlah Cluster : </p>
-              <p>Jumlah Household : </p>
-              <button class="button" id="viewListCluster">View List Cluster</button>
-            </div>
+              display: block;
+            }
+          </style>
+          ";
+        }
+        elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
+          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
+        }
+        ?>
+        <br><br>
+        
+        <div id="first-column" class="column large-4">
+          <div class="inner">
+            <h3>Area Information</h3>
+            <p>Jumlah Cluster : </p>
+            <p>Jumlah Household : </p>
+            <button class="button" id="viewListCluster">View List Cluster</button>
           </div>
-          <div id="second-column" class="column small-4" style="min-height: 500px;border-left: 2px solid #000">
-            <div class="inner">
-              <h3>List Cluster</h3>
-              <div class="scroll-box">
-                <table class="table-cluster">
-                  <tbody>
-                    <?php     
-                    if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
-                      clusterlist('L',$_POST["HS"],$_POST["SOC"]);              
-                    }
-                    ?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div id="third-column" class="column small-4" style="min-height: 500px; border-left: 2px solid #000">
-            <div class="inner">
-              <h3>List ODC</h3>
-            </div>
-          </div>
-
-          <?php
-            /*
-            <table class="table-cluster">
-              <tbody>
-                <?php     
+        </div>
+        <div id="second-column" class="column large-4">
+          <div class="inner">
+            <h3>List Cluster</h3>
+            <div class="scroll-box">
+              <table class="table-cluster">
+                <tbody>
+                  <?php     
                   if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
                     clusterlist('L',$_POST["HS"],$_POST["SOC"]);              
-                  } elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-                    echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
                   }
-                ?>
-              </tbody>
-            </table>
-            */
-            ?>
+                  ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="third-column" class="column large-4">
+          <div class="inner">
+            <h3>List ODC</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/ddl.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ddl.js"></script>
+<script>
+
+</script>
 
 </body>
 </html>

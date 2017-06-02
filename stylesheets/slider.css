@@ -13,14 +13,6 @@
 .slideshow-container:hover {
   animation-play-state: paused;
 }
-img, .text-container {
-  width: 1000px;
-  height: 225px;
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-  align: top left;
-}
 
 @media only screen and (max-width: 500px){
   .slideshow{

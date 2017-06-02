@@ -32,7 +32,17 @@ function datalist($no){
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
 	
-	echo '<li><a href="#">Info Cluster :</a>
+	echo '<li><a href="#"><b>Info ODP :</b></a>
+	<ul class="no-data menu vertical sublevel-1">
+		<form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form>
+		<li><a class="subitem">Jumlah ODP : '.$row['JML ODP'].'</a></li>
+		<li><a class="subitem">ISI : '.$row['ISI'].'</a></li>
+		<li><a class="subitem">AVAILABLE : '.$row['AVAI'].'</a></li>
+		<li><a class="subitem">KAPASITAS : '.$row['KAP'].'</a></li>
+	</ul>
+	</li>';
+
+	echo '<li><a href="#"><b>Info Cluster :</b></a>
 	<ul class="no-data menu vertical sublevel-1">
 		<li><a class="subitem">Tipe Cluster : '.$row['Tipe Cluster'].'</a></li>
 		<li><a class="subitem">Jenis Cluster : '.$row['Jenis Cluster'].'</a></li>
@@ -53,15 +63,7 @@ function datalist($no){
 	echo '<li><a class="no-list" href="#">ODP : '.$row['ODP'].'</a><ul class="no-data menu vertical sublevel-1"></ul></li>';
 	*/
 
-	echo '<li><a href="#">Info ODP :</a>
-	<ul class="no-data menu vertical sublevel-1">
-		<form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form>
-		<li><a class="subitem">Jumlah ODP : '.$row['JML ODP'].'</a></li>
-		<li><a class="subitem">ISI : '.$row['ISI'].'</a></li>
-		<li><a class="subitem">AVAILABLE : '.$row['AVAI'].'</a></li>
-		<li><a class="subitem">KAPASITAS : '.$row['KAP'].'</a></li>
-	</ul>
-	</li>';
+	
 
 }
 ?>

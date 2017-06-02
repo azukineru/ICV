@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+include('searchclust.php');
 ?>
 
 <!doctype html>
@@ -7,7 +8,7 @@ include('session.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICD | Dashboard</title>
+  <title>ICD | Customer Segments</title>
 
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />
@@ -28,7 +29,7 @@ include('session.php');
         <div class="row column">
           <br>
           <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
-          <a href="dashboard.php"><h4 class="text-center">IndiHome Cluster Digitalization</h4></a>
+          <a href="dashboard.php"><h4 class="text-center text-red">IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>
@@ -84,7 +85,6 @@ include('session.php');
 
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/foundation.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
   <script>
     $(document).foundation();
   </script>

@@ -29,7 +29,7 @@
 		if(mysqli_num_rows($query)>0){
 			while ($row = mysqli_fetch_array($query)){ 
 				echo '<tr>';
-				echo '<td><a class="ListCluster" href="#">'.$row['Nama Cluster'].'</a></td>';  
+				echo '<td><a target="_blank"class="ListCluster" href="page_view-datacluster.php?segment='.$segment.'&no='.$row['No'].'&search=0">'.$row['Nama Cluster'].'</a></td>';  
 				echo '</tr>';  
 			}
 		}else{
