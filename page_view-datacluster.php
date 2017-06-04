@@ -31,7 +31,8 @@ if($search==1){
 	<script type="text/javascript" src="js/pace.min.js"></script>
 	<script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
-<body>
+
+<body class="mapstyle-segment">
 	<div class="off-canvas-wrapper">
 		<div class="row expanded large-12 header-cluster hide-for-small-only">
 			<div class="large-3 large-push-1 columns">
@@ -92,7 +93,7 @@ if($search==1){
 				</div>
 			</div>
 
-			<aside class="large-7 columns float-right inner" style="height: 100%; background-color: #DFD9B9;">
+			<aside class="large-7 columns float-right inner" style="height: 100%;">
 				<br>
 				<h3>Cluster Data</h3>
 				<ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>

@@ -74,12 +74,12 @@
 
 
 	<br><br>
-	<div id="footer" class="hide-for-small-only">
+	<div id="footer">
 		<div class="large-12 columns">
 			<hr/>
 			<div class="row">
 				<div class="large-6 small-centered columns">
-					<p>Copyright © 2017 - Telkom Indonesia</p>
+					<p>Copyright © 2017 - Telkom Indonesia | <a href="about_us.php">About Us</a> | <a href="#">Contact</a></p>
 				</div>
 			</div>
 		</div>

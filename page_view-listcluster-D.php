@@ -19,7 +19,7 @@ include('clusterlist.php');
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>
 
-<body>
+<body class="mapstyle-segment">
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
