@@ -167,6 +167,9 @@ body {
 body a i{
 	color: white;
 }	
+body a p i{
+	color: black;
+}	
 select {
 	width:100%
 }

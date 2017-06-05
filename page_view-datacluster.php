@@ -61,33 +61,33 @@ if($search==1){
 					<div class="large-9 small-centered columns map-image">
 						<div class="row">					
 							<img id="myImg" class="thumbnail" src="<?php
-								$dir = 'image/maps/' . $no . '.png';
-								if( file_exists($dir)){
-									echo $dir;
-								}
-								else{
-									echo 'image/img-not-available.jpg';
-								}
+							$dir = 'image/maps/' . $no . '.png';
+							if( file_exists($dir)){
+								echo $dir;
+							}
+							else{
+								echo 'image/img-not-available.jpg';
+							}
 							?>">
 						</div>
 						
 						<div class="row">
 							<a href="<?php 
-								$dir = 'image/maps/' . $no . '.png';
-								if( file_exists($dir)){
-									map_url($no);
-								}
-								else{
-									echo '#';
-								}?>" target="_blank" class="button" >Map View</a>
+							$dir = 'image/maps/' . $no . '.png';
+							if( file_exists($dir)){
+								map_url($no);
+							}
+							else{
+								echo '#';
+							}?>" target="_blank" class="button" >Map View</a>
 							<a href="<?php 
-								$dir = 'image/maps/' . $no . '.png';
-								if( file_exists($dir)){
-									satellite_url($no);
-								}
-								else{
-									echo '#';
-								}?>" target="_blank" class="button" >Satellite View</a>
+							$dir = 'image/maps/' . $no . '.png';
+							if( file_exists($dir)){
+								satellite_url($no);
+							}
+							else{
+								echo '#';
+							}?>" target="_blank" class="button" >Satellite View</a>
 						</div>
 					</div>
 				</div>
@@ -96,13 +96,19 @@ if($search==1){
 			<aside class="large-7 columns float-right inner" style="height: 100%;">
 				<br>
 				<h3>Cluster Data</h3>
+				
+				<table class="table-cluster">
+					<tbody>
+						<?php
+						datalist($no);
+						?>
+					</tbody>
+				</table>
+
 				<ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
 					<?php
-					datalist($no);
+					clusterInfo($no);
 					?>
-				</ul>
-				<ul>
-					
 				</ul>
 			</aside>
 		</div>

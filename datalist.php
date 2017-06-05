@@ -5,7 +5,7 @@ function clustername($no){
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
 	
-	echo $row['Nama Cluster'];
+	echo $row['ODP'].'-'.$row['Nama Cluster'];
 }
 
 function map_url($no){
@@ -31,27 +31,27 @@ function datalist($no){
 	mysqli_select_db($con, "ojt");
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
-	
-	echo '<li><a href="#"><b>Info ODP :</b></a>
-	<ul class="no-data menu vertical sublevel-1">
-		<form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form>
-		<li><a class="subitem">Jumlah ODP : '.$row['JML ODP'].'</a></li>
-		<li><a class="subitem">ISI : '.$row['ISI'].'</a></li>
-		<li><a class="subitem">AVAILABLE : '.$row['AVAI'].'</a></li>
-		<li><a class="subitem">KAPASITAS : '.$row['KAP'].'</a></li>
-	</ul>
-	</li>';
 
-	echo '<li><a href="#"><b>Info Cluster :</b></a>
-	<ul class="no-data menu vertical sublevel-1">
-		<li><a class="subitem">Tipe Cluster : '.$row['Tipe Cluster'].'</a></li>
-		<li><a class="subitem">Jenis Cluster : '.$row['Jenis Cluster'].'</a></li>
-		<li><a class="subitem">Jumlah House Hold (Tenant) : '.$row['Jumlah House Hold (Tenant)'].'</a></li>
-		<li><a class="subitem">Harga Rumah : '.$row['Harga Rumah'].'</a></li>
-		<li><a class="subitem">'.$row['Jumlah Rumah yg Sdh LIS Telkom'].' rumah sudah LIS Telkom</a></li>
-		<form target="_blank" action="custdata.php?no='.$no.'" method="POST"><button class="button expanded">Download Customer Data</button></form>
-	</ul></li>';	
-
+	echo '
+	<tr>
+		<th colspan="4">Info ODP :</th>
+	</tr>
+	<tr>
+		<th colspan="4"><form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form></th>
+	</tr>
+	<tr>
+		<th>Jumlah ODP</th>
+		<th>Kapasitas</th>
+		<th>Isi</th>
+		<th>Available</th>
+	</tr>
+	<tr>
+		<td>'.$row['JML ODP'].'</td>
+		<td>'.$row['KAP'].'</td>
+		<td>'.$row['ISI'].'</td>
+		<td>'.$row['AVAI'].'</td>
+	</tr>
+	';
 	/*
 	echo '<li><a class="no-list" href="#">Kapasitas Jaringan : '.$row['Kapasitas Jaringan'].'</a><ul class="no-data menu vertical sublevel-1"></ul></li>';
 	echo '<li><a class="no-list" href="#">Readiness : '.$row['Readines'].'</a><ul class="no-data menu vertical sublevel-1"></ul></li>';
@@ -62,8 +62,29 @@ function datalist($no){
 	echo '<li><a class="no-list" href="#">Product/Partnership yg Ditawarkan : '.$row['Product/partnership yg ditawarkan'].'</a><ul class="no-data menu vertical sublevel-1"></ul></li>';
 	echo '<li><a class="no-list" href="#">ODP : '.$row['ODP'].'</a><ul class="no-data menu vertical sublevel-1"></ul></li>';
 	*/
-
-	
-
 }
+
+function clusterInfo($no){
+	$con=mysqli_connect("localhost", "root", "");
+	mysqli_select_db($con, "ojt");
+	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
+	$row=mysqli_fetch_array($query);
+
+	echo '<li><a href="#"><b>Info Cluster :</b></a>
+	<ul class="no-data menu vertical sublevel-1">
+		<li><a class="subitem">Tipe Cluster : '.$row['Tipe Cluster'].'</a></li>
+		<li><a class="subitem">Jenis Cluster : '.$row['Jenis Cluster'].'</a></li>
+		<li><a class="subitem">Jumlah House Hold (Tenant) : '.$row['Jumlah House Hold (Tenant)'].'</a></li>
+		<li><a class="subitem">Harga Rumah : '.$row['Harga Rumah'].'</a></li>
+		<li><a class="subitem">'.$row['Jumlah Rumah yg Sdh LIS Telkom'].' rumah sudah LIS Telkom</a></li>
+		<form target="_blank" action="custdata.php?no='.$no.'" method="POST"><button class="button expanded">Download Customer Data</button></form>
+	</ul></li>';
+
+	echo '<li><a href="#"><b>Info Kompetitor :</b></a>
+	<ul class="no-data menu vertical sublevel-1">
+		<li><a class="subitem">Jumlah Kompetitor : xx</a></li>
+		<li><a class="subitem">Nama Kompetitor : xxx</a></li>
+	</ul></li>';
+}
+
 ?>

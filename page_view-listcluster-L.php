@@ -43,8 +43,9 @@ include('clusterlist.php');
               <form action="" method="post">              
                 <div class="column large-2 float-left">
                  <label>Select Area
-                  <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">              
+                  <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'),document.getElementById('ddl3'))">              
                     <option value=""></option>
+                    <option value="All">All</option>					
                     <option value="HS 1">HS1</option>
                     <option value="HS 2">HS2</option>
                   </select>
@@ -58,7 +59,7 @@ include('clusterlist.php');
               </div>
               <div class="column large-2 float-left large-offset-1">
                 <label>Select Battlefield
-                  <select name="Battlefield" id="ddl2">
+                  <select name="BF" id="ddl3">
                   </select>
                 </label>
               </div>
@@ -90,9 +91,12 @@ include('clusterlist.php');
         
         <div id="first-column" class="column large-4">
           <div class="inner">
-            <h3>Area Information</h3>
-            <p>Jumlah Cluster : </p>
-            <p>Jumlah Household : </p>
+            <h3>Area Information</h3>																	
+            <?php     
+            if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+              overview('L',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);  				  
+            }
+            ?>			
             <button class="button" id="viewListCluster">View List Cluster</button>
           </div>
         </div>
@@ -104,17 +108,23 @@ include('clusterlist.php');
                 <tbody>
                   <?php     
                   if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
-                    clusterlist('L',$_POST["HS"],$_POST["SOC"]);              
+                    clusterlist('L',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);              
                   }
                   ?>
                 </tbody>
               </table>
             </div>
+            
           </div>
         </div>
         <div id="third-column" class="column large-4">
           <div class="inner">
             <h3>List ODC</h3>
+            <?php     
+            if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+              odclist('L',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);              
+            }
+            ?>
           </div>
         </div>
       </div>

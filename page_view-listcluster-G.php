@@ -32,7 +32,7 @@ include('clusterlist.php');
       <div class="large-9 float-right" data-off-canvas-content>
         <div class="title-bar hide-for-large">
           <div class="title-bar-left">
-            <a href="page_view-segments.php"><i class="fi-arrow-left medium"> Back</i></a>
+            <a href="page_view-segments.php" ><i class="fi-arrow-left medium"> Back</i></a>
           </div>
         </div>
         
@@ -43,8 +43,9 @@ include('clusterlist.php');
               <form action="" method="post">              
                 <div class="column large-2 float-left">
                  <label>Select Area
-                  <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">              
+                  <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'),document.getElementById('ddl3'))">              
                     <option value=""></option>
+          <option value="All">All</option>          
                     <option value="HS 1">HS1</option>
                     <option value="HS 2">HS2</option>
                   </select>
@@ -58,7 +59,7 @@ include('clusterlist.php');
               </div>
               <div class="column large-2 float-left large-offset-1">
                 <label>Select Battlefield
-                  <select name="Battlefield" id="ddl2">
+          <select name="BF" id="ddl3">
                   </select>
                 </label>
               </div>
@@ -66,62 +67,68 @@ include('clusterlist.php');
                 <label>&nbsp</label>
                 <button class="button expanded" type="submit" name="search">Search</button>
               </div>
-            </form>     
+            </form>
           </div>
         </div>
-        
+
         <div class="row large-12">
-         <?php
-         if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])){
-          searchparam('G',$_POST["HS"],$_POST["SOC"]);
-          echo "
-          <style type='text/css'>
+          <?php
+          if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])){
+            searchparam('G',$_POST["HS"],$_POST["SOC"]);
+            echo "
+            <style type='text/css'>
               #first-column{
-            display: block;
-          }
-        </style>
-        ";
-      }
-      elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-        echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
-      }
-      ?>
-      <br><br>
-      
-      <div id="first-column" class="column large-4">
-        <div class="inner">
-          <h3>Area Information</h3>
-          <p>Jumlah Cluster : </p>
-          <p>Jumlah Household : </p>
-          <button class="button" id="viewListCluster">View List Cluster</button>
-        </div>
-      </div>
-      
-      <div id="second-column" class="column large-4">
-        <div class="inner">
-          <h3>List Cluster</h3>
-          <div class="scroll-box">
-            <table class="table-cluster">
-              <tbody>
-                <?php     
+              display: block;
+            }
+          </style>
+          ";
+        }
+        elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
+          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
+        }
+        ?>
+        <br><br>
+        
+        <div id="first-column" class="column large-4">
+          <div class="inner">
+            <h3>Area Information</h3>                                 
+      <?php     
                 if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
-                  clusterlist('G',$_POST["HS"],$_POST["SOC"]);              
+                  overview('G',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);            
                 }
-                ?>
-              </tbody>
-            </table>
+                ?>      
+            <button class="button" id="viewListCluster">View List Cluster</button>
+          </div>
+        </div>
+        <div id="second-column" class="column large-4">
+          <div class="inner">
+            <h3>List Cluster</h3>
+            <div class="scroll-box">
+              <table class="table-cluster">
+                <tbody>
+                  <?php     
+                  if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+                    clusterlist('G',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);              
+                  }
+                  ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="third-column" class="column large-4">
+          <div class="inner">
+            <h3>List ODC</h3>
+            <?php     
+            if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+              odclist('G',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);              
+            }
+            ?>
           </div>
         </div>
       </div>
-      <div id="third-column" class="column large-4">
-        <div class="inner">
-          <h3>List ODC</h3>
-        </div>
-      </div>
-      
     </div>
   </div>
-</div>
 </div>
 </div>
 
@@ -130,7 +137,7 @@ include('clusterlist.php');
 <script src="js/app.js"></script>
 <script src="js/ddl.js"></script>
 <script>
-  $(document).foundation();
+
 </script>
 
 </body>
