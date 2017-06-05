@@ -158,14 +158,14 @@ include('searchclust.php');
 
           <div class="large-4 large-pull-1 column inner" style="margin-top: 40px;">
             <div class="row">
-              <h3>Customer Segmentation</h3>
+              <h3>Search by ODC Name</h3>
             </div>
             <div class="row">
               <div class="large-12 columns">
                 <div class="row collapse">
                   <form action="" method="post">
                     <div class="small-9 columns">
-                     <input type="text" placeholder="Type cluster name here" name="nameclust">
+                     <input type="text" placeholder="Type ODC name here" name="nameclust">
                    </div>
                    <div class="small-3 columns">
                      <button class="button postfix round search-style" type="submit" name="search">Search</button>

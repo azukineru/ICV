@@ -39,7 +39,7 @@ if(isset($_SESSION['login_user'])){
 			<div class="inner">
 				<h1><center>ABOUT US</center></h1>
 				<br>
-				<h5><center>Telkom Indonesia Witel Semarang ( North of Center Java ) in our business process hold Semarang area and around it. It is divided into some small area, such as: Simpang Lima, Johar , Tugu , Majapahit, Banyumanik, and Candi.<</center></h5>
+				<h5><center>Telkom Indonesia Witel Semarang ( North of Center Java ) business hold Semarang and its surroundings. This business area are divided into several region: Simpang Lima, Johar , Tugu , Majapahit, Banyumanik, and Candi.</center></h5>
 			</div>
 		</div>
 		<br><br>
@@ -47,7 +47,7 @@ if(isset($_SESSION['login_user'])){
 			<div class="inner">
 				<h1><center>About This Project</center></h1>
 				<br>
-				<h5><center>This project , IndiHome Cluster Digitalization , is an application which we use to represent the data and information on the cluster of IndiHome service.</center></h5>
+				<h5><center>IndiHome Cluster Digitalization is an application which is built to represent the data and information of IndiHome service in Semarang area.</center></h5>
 			</div>
 		</div>
 		<br><br>
@@ -59,7 +59,7 @@ if(isset($_SESSION['login_user'])){
 					<button type="button" class="control" data-filter=".account">Account</button>
 					<button type="button" class="control" data-filter=".technology">Technology</button>
 					<button type="button" class="control" data-filter=".creative">Creative</button>
-					<button type="button" class="control" data-filter=".support">Data</button>
+					<button type="button" class="control" data-filter=".support">Content</button>
 				</div>
 
 				<div class="container">
@@ -87,15 +87,15 @@ if(isset($_SESSION['login_user'])){
 					<div class="mix technology">
 						<div class="t1"></div>
 						<div class="mix-text">
-							<h5>Abdulloh Al M.</h5>
-							<p>Back End Engineer</p>
+							<h5>Abdulloh A.</h5>
+							<p>Back-End Engineer</p>
 						</div>
 					</div>
 					<div class="mix technology">
 						<div class="t2"></div>
 						<div class="mix-text">
 							<h5>Faishal Azka J.</h5>
-							<p>Front End Engineer</p>
+							<p>Front-End Engineer</p>
 						</div>
 					</div>
 					<div class="mix creative">
@@ -116,56 +116,56 @@ if(isset($_SESSION['login_user'])){
 						<div class="s1"></div>
 						<div class="mix-text">
 							<h5>Aifatul Vipta F.E.I.</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s2"></div>
 						<div class="mix-text">
 							<h5>Fauzi Rachman</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s3"></div>
 						<div class="mix-text">
 							<h5>Hanif Wijdan M.</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s4"></div>
 						<div class="mix-text">
 							<h5>Julika Givary</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s5"></div>
 						<div class="mix-text">
 							<h5>Nicky Yudha A.</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s6"></div>
 						<div class="mix-text">
 							<h5>Okky Pratama P.</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s7"></div>
 						<div class="mix-text">
 							<h5>Tara Damayanti</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 					<div class="mix support">
 						<div class="s8"></div>
 						<div class="mix-text">
 							<h5>Yafis Sukma K.</h5>
-							<p>Support</p>
+							<p>Contributor</p>
 						</div>
 					</div>
 

@@ -80,10 +80,12 @@ function clusterInfo($no){
 		<form target="_blank" action="custdata.php?no='.$no.'" method="POST"><button class="button expanded">Download Customer Data</button></form>
 	</ul></li>';
 
+	$kquery=mysqli_query($con, "SELECT * FROM kompetitor WHERE No = ".$no);
+	$krow=mysqli_fetch_array($kquery);																
 	echo '<li><a href="#"><b>Info Kompetitor :</b></a>
 	<ul class="no-data menu vertical sublevel-1">
-		<li><a class="subitem">Jumlah Kompetitor : xx</a></li>
-		<li><a class="subitem">Nama Kompetitor : xxx</a></li>
+		<li><a class="subitem">Kompetitor : '.$krow['NAMA KOMPETITOR'].'</a></li>
+		<li><a class="subitem">Harga Kompetitor : ~ Rp '.$krow['HARGA KOMPETITOR'].'</a></li>
 	</ul></li>';
 }
 
