@@ -61,7 +61,7 @@ include('searchclust.php');
         </div>
 
         <div class="row large-12" id="scroll">
-          <div class="large-6 large-offset-1 column" style="margin-top: 60px;">
+          <div class="large-6 large-offset-1 column">
             <ul id="da-thumbs" class="da-thumbs inner">
               <li>
                 <a href="page_view-listcluster-G.php">
@@ -154,9 +154,18 @@ include('searchclust.php');
                 </a>
               </li>
             </ul>
+            
+            <div class="column large-12" style="margin-top: 20px;">
+              <p>Model Zona Pemenangan dan Eksekusi Operasional :</p>
+              <div class="columns large-6"><div class="box bg-red"></div> <b>WIN</b>ning Zone -> CAP & Agency</div>
+              <div class="columns large-6"><div class="box bg-grey"></div> <b>BASIC</b> Zone -> Agency</div>
+              <div class="columns large-6"><div class="box bg-black"></div> <b>SBR</b> Zone -> Organic & Canvasser</div>
+              <div class="columns large-6"><div class="box bg-green"></div> <b>EDU</b>cation Zone -> Canvasser</div>
+              <div class="column large-12"><div class="box bg-white"></div> <b>Apartment</b> Zone -> CAP (Consumer Account Partner)</div>
+            </div>
           </div>
 
-          <div class="large-4 large-pull-1 column inner" style="margin-top: 40px;">
+          <div class="large-4 large-pull-1 column inner">
             <div class="row">
               <h3>Search by ODC Name</h3>
             </div>
@@ -177,32 +186,18 @@ include('searchclust.php');
              <div>
                <?php searchclust(); ?>
              </div>
-              <!--
-              <div class="scroll-box">
-                <table class="table-cluster">
-                <tbody>
-                  <tr>
-                    <td><a href="page_view-datacluster.php"></a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="page_view-datacluster.php"></a></td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-            -->
-          </div>
+           </div>
 
-        </div>
-      </div>
+         </div>
+       </div>
 
-    </div>
-  </div>
+     </div>
+   </div>
 
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/foundation.js"></script>
-  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-  <script>
+   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="js/foundation.js"></script>
+   <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+   <script>
     $(document).foundation();
     $(function() {
 

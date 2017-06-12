@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'bebas_neueregular';
-    src: url('../../../fonts/bebasneue-webfont.woff2') format('woff2'),
-         url('../../../fonts/bebasneue-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 meta.foundation-version {
   font-family: "/5.5.3/"; }
 
@@ -65,7 +56,7 @@ body {
 
 body {
   background: #E0DABA;
-
+  color: #A98C76;
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -1609,12 +1600,12 @@ button, .button {
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
-  background-color: #FD9682;
+  background-color: #008CBA;
   border-color: #007095;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #C38570; }
+    background-color: #007095; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
@@ -2760,7 +2751,7 @@ span.postfix, label.postfix {
 input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 20px;
+  border-radius: 0;
   background-color: #FFFFFF;
   border-style: solid;
   border-width: 1px;
@@ -5305,9 +5296,9 @@ p {
     line-height: 1.35; }
 
 /* Default header styles */
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: 'bebas_neueregular', "Comic Sans MS";
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;

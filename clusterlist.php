@@ -1,9 +1,11 @@
 <?php
-	function searchparam($segment,$HS,$SOC){
+	function searchparam($segment,$HS,$SOC,$BF){
 		echo '<b>';
 		echo '&nbsp&nbsp&nbsp&nbsp&nbspArea: '.$HS;
 		echo ', ';
 		echo 'SOC: '.$SOC;
+		echo ', ';
+		echo 'Battlefield: '.$BF;
 		echo '</b>';
 	}
 
@@ -35,7 +37,18 @@
 		if($BF=="All"){
 			$qBF='';
 		}else{
-			$qBF=" AND Battlefield = '".$BF."'";
+			if($BF=="Kuadran 1 (Retensi)"){
+				$BF = '1';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			elseif($BF=="Kuadran 2 (Akuisisi)"){
+				$BF = '2';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			else{
+				$BF = '3';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
 		}
 		
 		$query=mysqli_query($con, "SELECT DISTINCT * FROM cluster WHERE 9Cluster = '".$segment."'".$qHS.$qSOC.$qBF);
@@ -53,6 +66,7 @@
 		echo
 		'<p>Jumlah Cluster : '.$jmlcluster.'</p>
         <p>Jumlah Household : '.$jmlhh.'</p>';
+
 	}
 	
 	function clusterlist($segment,$HS,$SOC,$BF){	
@@ -80,7 +94,18 @@
 		if($BF=="All"){
 			$qBF='';
 		}else{
-			$qBF=" AND Battlefield = '".$BF."'";
+			if($BF=="Kuadran 1 (Retensi)"){
+				$BF = '1';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			elseif($BF=="Kuadran 2 (Akuisisi)"){
+				$BF = '2';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			else{
+				$BF = '3';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
 		}
 		
 		$query=mysqli_query($con, "SELECT DISTINCT `Nama Cluster` FROM cluster WHERE 9Cluster = '".$segment."'".$qHS.$qSOC.$qBF);
@@ -121,7 +146,18 @@
 		if($BF=="All"){
 			$qBF='';
 		}else{
-			$qBF=" AND Battlefield = '".$BF."'";
+			if($BF=="Kuadran 1 (Retensi)"){
+				$BF = '1';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			elseif($BF=="Kuadran 2 (Akuisisi)"){
+				$BF = '2';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
+			else{
+				$BF = '3';
+				$qBF=" AND Battlefield = '".$BF."'";
+			}
 		}
 		
 		$query=mysqli_query($con, "SELECT * FROM cluster WHERE 9Cluster = '".$segment."'".$qHS.$qSOC.$qBF);

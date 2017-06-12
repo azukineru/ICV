@@ -16,7 +16,7 @@ include('searchclust.php');
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/pace.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheets/slider.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheets/slider.css">
   <script type="text/javascript" src="js/pace.min.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
 </head>

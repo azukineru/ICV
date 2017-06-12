@@ -3,7 +3,7 @@ function configureDropDownLists(ddl1,ddl2,ddl3) {
 	var HS1 = ['All', 'SMT', 'JHR', 'SSL'];
 	var HS2 = ['All', 'MJP', 'BMK', 'SMC'];
 	
-	var BF = ['All', '1', '2', '3'];
+	var BF = ['All', 'Kuadran 1 (Retensi)', 'Kuadran 2 (Akuisisi)', 'Kuadran 3 (Penetrasi)'];
 	
 	switch (ddl1.value) {
 		case 'All':
