@@ -21,7 +21,7 @@ include('searchclust.php');
 </head>
 <body>
 
-  <div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper mapstyle">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
       <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
@@ -167,7 +167,7 @@ include('searchclust.php');
 
           <div class="large-4 large-pull-1 column inner">
             <div class="row">
-              <h3>Search by ODC Name</h3>
+              <h3>Search by Cluster Name</h3>
             </div>
             <div class="row">
               <div class="large-12 columns">

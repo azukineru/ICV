@@ -22,7 +22,7 @@ include('searchclust.php');
 </head>
 <body>
 
-  <div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper mapstyle">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
       <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">

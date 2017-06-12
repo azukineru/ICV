@@ -160,16 +160,13 @@ body {
 	height: 100%;
 	line-height:1.5;
 	color:#0a0a0a;
-	background:#e1daba;
+	background-color:#E7EAEF;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale
 }
 body a i{
 	color: white;
-}	
-body a p i{
-	color: black;
-}	
+}		
 select {
 	width:100%
 }
@@ -2244,7 +2241,6 @@ select[multiple] {
 .off-canvas-content {
 	min-height: 100%;	
 	display: block;
-	background:#DFD9B9;
 	transition:-webkit-transform .5s ease;
 	transition:transform .5s ease;
 	-webkit-backface-visibility:hidden;
@@ -2268,7 +2264,6 @@ select[multiple] {
 .off-canvas {
 	position:absolute;
 	overflow: auto;
-	background:#D6CFA5;
 	z-index:10;
 	min-height:100%;
 	width: 50%;
@@ -2278,9 +2273,9 @@ select[multiple] {
 }
 @media screen and (min-width: 500px){
 	.off-canvas{
-		-moz-box-shadow:    10px 0px 20px 2px #BCB895;
-		-webkit-box-shadow: 10px 0px 20px 2px #BCB895;
-		box-shadow:         10px 0px 20px 2px #BCB895;
+		-moz-box-shadow:    10px 0px 20px 2px #c6c9ce;
+		-webkit-box-shadow: 10px 0px 20px 2px #c6c9ce;
+		box-shadow:         10px 0px 20px 2px #c6c9ce;
 	}
 }
 .orbit,.orbit-container {

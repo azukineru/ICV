@@ -74,7 +74,7 @@ include('clusterlist.php');
         <div class="row large-12">
           <?php
           if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])){
-            searchparam('G',$_POST["HS"],$_POST["SOC"]);
+            searchparam('G',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);
             echo "
             <style type='text/css'>
               #first-column{
@@ -84,7 +84,7 @@ include('clusterlist.php');
           ";
         }
         elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
+          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area, SOC, and Battlefield.';
         }
         ?>
         <br><br>

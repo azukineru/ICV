@@ -31,7 +31,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: #efefef;
+	background-color: white;
 	text-align: center;
 }
 
@@ -46,7 +46,29 @@
 	height: 100%;
 }
 
-/* Map-style for 9 segment */
+/* Map-style */
+.mapstyle{
+	background: #E7EAEF;
+}
+.mapstyle:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+	background-image: url('../image/bg2.jpg'); 
+	background-position: bottom right; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .mapstyle-segment{
 	background-image: url('../image/bg.jpg'); background-position: top right; background-size: 100%; background-repeat: no-repeat;
 }

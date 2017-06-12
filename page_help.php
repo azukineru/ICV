@@ -20,14 +20,14 @@ include('session.php');
 </head>
 <body>
 
-  <div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper mapstyle">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
       <div class="off-canvas position-left reveal-for-large my-info" id="my-info" data-off-canvas data-position="left">
         <div class="row column">
           <br>
           <a href="dashboard.php"><img src="image/logo-telkom.png "></a>
-          <a href="dashboard.php"><h4 class="text-center">IndiHome Cluster Digitalization</h4></a>
+          <a href="dashboard.php"><h4 class="text-center text-red">IndiHome Cluster Digitalization</h4></a>
 
           <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
             <li>

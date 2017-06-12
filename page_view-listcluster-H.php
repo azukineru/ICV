@@ -45,7 +45,7 @@ include('clusterlist.php');
                  <label>Select Area
                   <select name="HS" id="ddl1" onchange="configureDropDownLists(this,document.getElementById('ddl2'),document.getElementById('ddl3'))">              
                     <option value=""></option>
-          <option value="All">All</option>          
+                    <option value="All">All</option>          
                     <option value="HS 1">HS1</option>
                     <option value="HS 2">HS2</option>
                   </select>
@@ -59,7 +59,7 @@ include('clusterlist.php');
               </div>
               <div class="column large-2 float-left large-offset-1">
                 <label>Select Battlefield
-          <select name="BF" id="ddl3">
+                  <select name="BF" id="ddl3">
                   </select>
                 </label>
               </div>
@@ -74,7 +74,7 @@ include('clusterlist.php');
         <div class="row large-12">
           <?php
           if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])){
-            searchparam('H',$_POST["HS"],$_POST["SOC"]);
+            searchparam('H',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);
             echo "
             <style type='text/css'>
               #first-column{
@@ -84,7 +84,7 @@ include('clusterlist.php');
           ";
         }
         elseif (empty($_POST["HS"]) || empty($_POST["SOC"])){
-          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area and SOC.';
+          echo '&nbsp&nbsp&nbsp&nbsp&nbspPlease define Area, SOC, and Battlefield.';
         }
         ?>
         <br><br>
@@ -92,11 +92,11 @@ include('clusterlist.php');
         <div id="first-column" class="column large-4">
           <div class="inner">
             <h3>Area Information</h3>                                 
-      <?php     
-                if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
-                  overview('H',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);            
-                }
-                ?>      
+            <?php     
+            if (isset($_POST["search"]) && !empty($_POST["HS"]) && !empty($_POST["SOC"])) {         
+              overview('H',$_POST["HS"],$_POST["SOC"],$_POST["BF"]);            
+            }
+            ?>      
             <button class="button" id="viewListCluster">View List Cluster</button>
           </div>
         </div>
