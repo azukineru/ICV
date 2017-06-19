@@ -24,7 +24,7 @@
 					echo '<tbody>';
 						while ($row = mysqli_fetch_array($query)){
 							echo '<tr>';
-								echo '<td><a href="page_view-datacluster.php?segment='.$row['9Cluster'].'&no='.$row['No'].'&search=1">'.$row['Nama Cluster'].'</a></td>';
+								echo '<td><a href="#">'.$row['Nama Cluster'].'</a></td>';
 							echo '</tr>';
 						}
 					echo '</tbody>';
