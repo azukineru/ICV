@@ -51,7 +51,7 @@
 			}
 		}
 		
-		$query=mysqli_query($con, "SELECT DISTINCT * FROM cluster WHERE 9Cluster = '".$segment."'".$qHS.$qSOC.$qBF);
+		$query=mysqli_query($con, "SELECT DISTINCT `Nama Cluster` FROM cluster WHERE 9Cluster = '".$segment."'".$qHS.$qSOC.$qBF);
 					
 		$jmlcluster=mysqli_num_rows($query);
 		
