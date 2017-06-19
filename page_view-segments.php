@@ -174,7 +174,7 @@ include('searchclust.php');
                 <div class="row collapse">
                   <form action="" method="post">
                     <div class="small-9 columns">
-                     <input type="text" placeholder="Type ODC name here" name="nameclust">
+                     <input type="text" placeholder="Type cluster name here" name="nameclust">
                    </div>
                    <div class="small-3 columns">
                      <button class="button postfix round search-style" type="submit" name="search">Search</button>

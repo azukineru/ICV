@@ -1,7 +1,6 @@
 <?php	
 function clustername($no){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
 	
@@ -9,8 +8,7 @@ function clustername($no){
 }
 
 function map_url($no){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	$query=mysqli_query($con, "SELECT * FROM map_data WHERE id_cluster = ".$no);
 	$row=mysqli_fetch_array($query);
 	
@@ -18,8 +16,7 @@ function map_url($no){
 }
 
 function satellite_url($no){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	$query=mysqli_query($con, "SELECT * FROM map_data WHERE id_cluster = ".$no);
 	$row=mysqli_fetch_array($query);
 	
@@ -27,8 +24,7 @@ function satellite_url($no){
 }
 
 function datalist($no){				
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
 
@@ -65,8 +61,7 @@ function datalist($no){
 }
 
 function clusterInfo($no){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	$query=mysqli_query($con, "SELECT * FROM cluster WHERE No = ".$no);
 	$row=mysqli_fetch_array($query);
 

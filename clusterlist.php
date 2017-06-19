@@ -10,8 +10,7 @@
 	}
 
 	function overview($segment,$HS,$SOC,$BF){	
-		$con=mysqli_connect("localhost", "root", "");
-		mysqli_select_db($con, "ojt");
+		include('database.php');
 		
 		if($HS=="All"){
 			$qHS='';
@@ -70,8 +69,7 @@
 	}
 	
 	function clusterlist($segment,$HS,$SOC,$BF){	
-		$con=mysqli_connect("localhost", "root", "");
-		mysqli_select_db($con, "ojt");
+		include('database.php');
 		
 		if($HS=="All"){
 			$qHS='';
@@ -122,8 +120,7 @@
 	}
 	
 	function odclist($segment,$HS,$SOC,$BF){	
-		$con=mysqli_connect("localhost", "root", "");
-		mysqli_select_db($con, "ojt");
+		include('database.php');
 		
 		if($HS=="All"){
 			$qHS='';

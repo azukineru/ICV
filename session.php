@@ -1,6 +1,5 @@
 <?php
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	
 	session_start();
 	

@@ -1,7 +1,6 @@
 <?php
 function searchclust(){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	if (isset($_REQUEST['search'])) {
 		$nameclust = mysqli_real_escape_string($con, $_REQUEST['nameclust']);
 		$search_exploded=explode(" ",$nameclust);
@@ -36,8 +35,7 @@ function searchclust(){
 }
 
 function searchodc(){
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	if (isset($_REQUEST['search'])) {
 		$nameclust = mysqli_real_escape_string($con, $_REQUEST['nameclust']);
 		$search_exploded=explode(" ",$nameclust);

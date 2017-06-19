@@ -1,6 +1,5 @@
 <?php
-	$con=mysqli_connect("localhost", "root", "");
-	mysqli_select_db($con, "ojt");
+	include('database.php');
 	
 	$no=$_GET['no'];
 	$nquery=mysqli_query($con, "SELECT ODP FROM cluster WHERE No = '".$no."'");

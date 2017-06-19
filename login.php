@@ -3,8 +3,7 @@
 	$error='';
 	
 	if(isset($_POST['login'])){
-		$con=mysqli_connect("localhost", "root", "");
-		mysqli_select_db($con, "ojt");
+		include('database.php');
 
 		if(empty($_POST['username'])||empty($_POST['password'])){
 			$error="Username and Password is required to log in";
