@@ -57,7 +57,7 @@ function searchodc(){
 		$query = mysqli_query($con, $sql); 
 		echo '<div id="hidden-column" class="scroll-box-20">';
 		while ($row = mysqli_fetch_array($query)){
-			echo '<td><a href="#" class="button extended odc '.$row['Nama Cluster'].'">'.$row['ODP'].'-'.$row['Nama Cluster'].'</a></td>';
+			echo '<td><a href="page_view-datacluster.php?segment='.$row['9Cluster'].'&no='.$row['No'].'&search=1" class="button extended odc '.$row['Nama Cluster'].'">'.$row['ODP'].'-'.$row['Nama Cluster'].'</a></td>';
 		}
 		echo '</div>'; 
 	}
