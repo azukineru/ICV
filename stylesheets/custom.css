@@ -211,8 +211,17 @@ table{
 	border:1px solid #ccc;
 	overflow:auto;
 }
+.scroll-box-20{
+	max-height: 200px;
+	width:100%;
+	border:1px solid #ccc;
+	overflow-y: auto;
+}
 
 /* Hide show div on List CLuster page */
+#hidden-column{
+	display: none;
+}
 #first-column{
 	display:none; 
 	min-height: 500px;

@@ -184,7 +184,10 @@ include('searchclust.php');
              </div>
 
              <div>
-               <?php searchclust(); ?>
+               <?php 
+               searchclust(); 
+               searchodc();
+               ?>
              </div>
            </div>
 
@@ -196,6 +199,7 @@ include('searchclust.php');
 
    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
    <script type="text/javascript" src="js/foundation.js"></script>
+   <script src="js/app.js"></script>
    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
    <script>
     $(document).foundation();

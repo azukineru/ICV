@@ -20,7 +20,26 @@ function showODCList(cname) {
 	var bodc = document.getElementsByClassName(cname);
 	for(var i=0; i<bodc.length; i++){
 		bodc[i].style.display = 'block';
+		//bodc[i].classList.remove("odc");
 	}
+	//document.getElementsByName(cname).style.display = 'block';
+	//document.getElementById('cname').value = cname;
+}
+
+function searchODCList(cname) {
+    document.getElementById('hidden-column').style.display = 'block';
+
+    var aodc = document.getElementsByClassName('odc');
+    var bodc = document.getElementsByClassName(cname);
+	
+	for(var i=0; i<aodc.length; i++){
+		aodc[i].style.display = 'none';
+	}
+	
+	for(var i=0; i<bodc.length; i++){
+		bodc[i].style.display = 'block';
+	}
+	
 	//document.getElementsByName(cname).style.display = 'block';
 	//document.getElementById('cname').value = cname;
 }
