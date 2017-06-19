@@ -37,7 +37,7 @@ function datalist($no){
 		<th colspan="4">Info ODP :</th>
 	</tr>
 	<tr>
-		<th colspan="4"><form target="_blank" action="https://starclick.telkom.co.id/starclick/login.php"><button class="button expanded">Detail ODP on StarClick</button></form></th>
+		<th colspan="4"><form target="_blank" action="https://dashboard.telkom.co.id/fulfillment"><button class="button expanded">Detail ODP on Dashboard Fulfillment</button></form></th>
 	</tr>
 	<tr>
 		<th>Jumlah ODP</th>
@@ -86,6 +86,15 @@ function clusterInfo($no){
 	<ul class="no-data menu vertical sublevel-1">
 		<li><a class="subitem">Kompetitor : '.$krow['NAMA KOMPETITOR'].'</a></li>
 		<li><a class="subitem">Harga Kompetitor : ~ Rp '.$krow['HARGA KOMPETITOR'].'</a></li>
+	</ul></li>';
+	
+	$pquery=mysqli_query($con, "SELECT * FROM pricing WHERE No = ".$no);
+	$prow=mysqli_fetch_array($pquery);	
+	
+	echo '<li><a href="#"><b>Info Package Offering :</b></a>
+	<ul class="no-data menu vertical sublevel-1">
+		<li><a class="subitem">Paket : '.$prow['PPMB_paket'].'</a></li>
+		<li><a class="subitem">Harga : '.$prow['PPMB_tarif'].'</a></li>
 	</ul></li>';
 }
 
