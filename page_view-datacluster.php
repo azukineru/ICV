@@ -87,7 +87,7 @@ if($search==1){
 					<tbody>
 						<?php
 						datalist($no);
-						?>
+						?>						
 					</tbody>
 				</table>
 
@@ -95,9 +95,42 @@ if($search==1){
 					<?php
 					clusterInfo($no);
 					?>
+					<li><a href="#"><b>Focus Cluster :</b></a>
+						<ul class="no-data menu vertical sublevel-1">
+							<div class="medium-12">
+								<table class="text-center" style="width: 100%;">
+									<tr>
+										<th colspan="7">Latest Data :</th>
+									</tr>
+									<tr>
+										<th>Sales</th>
+										<th>Tanggal</th>
+										<th>PIC</th>
+										<th>Target ODP</th>
+										<th>Target PS</th>
+										<th>Realisasi PS</th>
+										<th>Opsi</th>
+									</tr>
+									<tr>
+										<td>Canvaser</td>
+										<td>16/06/2017 - 22/06/2017</td>
+										<td>Al Mubarok</td>
+										<td>SMT-FAA-Candi</td>
+										<td>15</td>
+										<td>-</td>
+										<td>Edit | Delete</td>
+									</tr>
+								</table>
+								<div class="medium-6 column"><button data-open="modal1" class="button success expanded column">Add New Data</button></div>
+								<div class="medium-6 column"><button href="#" class="button expanded column">View All Data</button></div>
+							</div>
+						</ul>
+					</li>
 				</ul>
+
 			</aside>
 		</div>
+
 		<div id="myModal" class="modal hide-for-small-only">
 
 			<!-- The Close Button -->
@@ -110,10 +143,62 @@ if($search==1){
 			<div id="caption"></div>
 		</div>
 
+		<div class="reveal" id="modal1" data-reveal>
+			<h1>Add New Data</h1>
+			<form>
+				<div class="row inner">
+					<div class="medium-6 row">
+						<label>Tipe Sales :
+							<select>
+								<option value="s1">Canvaser</option>
+								<option value="s1">Sales Agent</option>
+								<option value="s1">CAP</option>
+								<option value="s1">ESA</option>
+							</select>
+						</label>
+					</div>
+					<div class="medium-12 row">
+						<div class="medium-6 column">
+							<label>Tanggal Mulai :
+								<input type="date">
+							</label>
+						</div>
+						<div class="medium-6 column">
+							<label>Tanggal Berakhir :
+								<input type="date">
+							</label>
+						</div>
+					</div>
+					<div class="medium-12 row">
+						<label>PIC :
+							<input type="text">
+						</label>
+					</div>
+					<div class="medium-12 row">
+						<label>Target ODP :
+							<input type="text">
+						</label>
+					</div>
+					<div class="medium-6 row">
+						<label>Target PS :
+							<input type="number" value="1" min="1">
+						</label>
+					</div>
+
+				</div>
+				<button class="button" type="submit">Submit</button>
+			</form>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
 	</div>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/foundation.js"></script>
 	<script type="text/javascript" src="js/modal-image.js"></script>
+	<script src="js/foundation.core.js"></script>
+	<script src="js/foundation.reveal.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script>
 		$(document).foundation();
