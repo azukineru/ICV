@@ -1,6 +1,6 @@
 <?php
-include('session.php');
-include('datalist.php');
+include('function/session.php');
+include('function/datalist.php');
 
 $segment=$_GET['segment'];
 $no=$_GET['no'];
@@ -72,22 +72,8 @@ if($search==1){
 						</div>
 						
 						<div class="row">
-							<a href="<?php 
-							$dir = 'image/maps/' . $no . '.png';
-							if( file_exists($dir)){
-								map_url($no);
-							}
-							else{
-								echo '#';
-							}?>" target="_blank" class="button" >Map View</a>
-							<a href="<?php 
-							$dir = 'image/maps/' . $no . '.png';
-							if( file_exists($dir)){
-								satellite_url($no);
-							}
-							else{
-								echo '#';
-							}?>" target="_blank" class="button" >Satellite View</a>
+							<a href="<?php map_url($no) ?>" target="_blank" class="button" >Map View</a>
+							<a href="<?php satellite_url($no) ?>" target="_blank" class="button" >Satellite View</a>
 						</div>
 					</div>
 				</div>

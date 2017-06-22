@@ -1,6 +1,6 @@
 <?php
-include('session.php');
-include('searchclust.php');
+include('function/session.php');
+include('function/searchclust.php');
 ?>
 
 <!doctype html>
@@ -8,7 +8,7 @@ include('searchclust.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICD | Customer Segments</title>
+  <title>ICD | Dashboard</title>
 
   <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation2.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css" />

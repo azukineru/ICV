@@ -1,6 +1,6 @@
 <?php
-include('session.php');
-include('searchclust.php');
+include('function/session.php');
+include('function/searchclust.php');
 ?>
 
 <!doctype html>

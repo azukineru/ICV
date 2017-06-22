@@ -1,6 +1,6 @@
 <?php
-include('session.php'); 
-include('clusterlist.php');
+include('function/session.php'); 
+include('function/clusterlist.php');
 ?>              
 <!doctype html>
 <html class="no-js" lang="en">
